@@ -1,4 +1,4 @@
-# Python-Macros-For_FreeCAD
+# Python-Macros-For-FreeCAD
 This repository contain Python scripts to design Parts on FreeCAD. Instead of using a mouse to create 3D parts, Python scripts can create 3D parts instantly with FreeCAD.
 
 #Requirements:
@@ -12,4 +12,6 @@ This repository contain Python scripts to design Parts on FreeCAD. Instead of us
 3) Click on View button
 4) Click on Panels
 5) Click on Python Console
-6) 
+6) Type the command-line : execfile("the_path_of_your_file")
+
+The part was created by the code.
