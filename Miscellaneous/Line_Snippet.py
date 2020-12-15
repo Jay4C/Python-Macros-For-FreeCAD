@@ -1,4 +1,4 @@
-import Part,PartGui 
+import Part, PartGui
 doc=App.activeDocument() 
 # add a line element to the document and set its points 
 l=Part.LineSegment()

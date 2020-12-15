@@ -5,3 +5,5 @@ box.Height = 5
 box.Length = 5
 box.Width = 5
 doc.recompute()
+Gui.activeDocument().activeView().viewIsometric()
+Gui.SendMsgToActiveView("ViewFit")

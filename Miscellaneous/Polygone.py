@@ -10,8 +10,6 @@ v=App.Vector(0,0,10)
 n.append(v)
 v=App.Vector(0,10,10) 
 n.append(v)
-#... repeat for all nodes 
-# Create a polygon object and set its nodes 
-p=doc.addObject("Part::Polygon","Polygon") 
+p=doc.addObject("Part::Polygon", "Polygon")
 p.Nodes=n 
 doc.recompute()
