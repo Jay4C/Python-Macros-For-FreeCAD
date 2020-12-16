@@ -1,3 +1,4 @@
+# https://wiki.freecadweb.org/Scripting_examples
 # https://wiki.freecadweb.org/Scripts
 
 """filename.py
