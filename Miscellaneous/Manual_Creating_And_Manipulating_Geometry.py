@@ -1,3 +1,4 @@
+# https://wiki.freecadweb.org/Scripting_examples
 # https://wiki.freecadweb.org/Manual:Creating_and_manipulating_geometry
 
 App.newDocument("Unnamed")
