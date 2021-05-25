@@ -13,7 +13,7 @@ This repository contain Python scripts to design Parts on FreeCAD. Instead of us
 4) Click on Panels.
 5) Click on Python Console.
 6) Click on the "Create a new empty document" button.
-6) Type the command-line : execfile("the_path_of_your_file").
+6) Type the command-line : exec(open("the_path_of_your_file").read()).
 7) Click on the right button on your mouse.
 8) Click on Fit all.
 
