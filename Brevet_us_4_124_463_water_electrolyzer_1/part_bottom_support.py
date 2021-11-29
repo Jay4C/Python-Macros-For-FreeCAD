@@ -71,7 +71,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_bottom_support").getObject("Shape"))
 
-stl_file = u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_1/part_bottom_support.stl"
+stl_file = u"part_bottom_support.stl"
 
 Mesh.export(__objs__, stl_file)
 
