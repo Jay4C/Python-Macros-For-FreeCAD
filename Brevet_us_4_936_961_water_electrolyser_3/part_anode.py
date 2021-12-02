@@ -2,7 +2,7 @@ import FreeCAD, Part, Mesh
 
 DOC = FreeCAD.activeDocument()
 
-DOC_NAME = "part_ecrou_m12"
+DOC_NAME = "part_anode"
 
 
 def clear_doc():
@@ -28,11 +28,7 @@ else:
 EPS = 0.10
 EPS_C = EPS * -0.5
 
-cylinder_1 = Part.makeCylinder(11, 10)
-
-cylinder_2 = Part.makeCylinder(6, 10)
-
-cylinder_1 = cylinder_1.cut(cylinder_2)
+cylinder_1 = Part.makeCylinder(2, 100)
 
 Part.show(cylinder_1)
 
@@ -40,11 +36,11 @@ DOC.recompute()
 
 __objs__=[]
 
-__objs__.append(FreeCAD.getDocument("part_ecrou_m12").getObject("Shape"))
+__objs__.append(FreeCAD.getDocument("part_anode").getObject("Shape"))
 
-stl_file = u"part_ecrou_m12.stl"
+stl_file = u"part_anode.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
-    
+        

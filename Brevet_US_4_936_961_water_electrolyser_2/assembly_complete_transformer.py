@@ -41,17 +41,17 @@ Part.show(part_core_ferrite)
 DOC.recompute()
 
 # insert transformer
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_transformer.stl", "assembly_complete_transformer")
+Mesh.insert(u"part_transformer.stl", "assembly_complete_transformer")
 
 FreeCAD.getDocument("assembly_complete_transformer").getObject("part_transformer").Placement = App.Placement(App.Vector(-18.7, 48, -17.4), App.Rotation(App.Vector(1,0,0), 90))
 
 # insert transformer
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_transformer.stl", "assembly_complete_transformer")
+Mesh.insert(u"part_transformer.stl", "assembly_complete_transformer")
 
 FreeCAD.getDocument("assembly_complete_transformer").getObject("part_transformer001").Placement = App.Placement(App.Vector(18.7 + 28, 48, -17.4), App.Rotation(App.Vector(1,0,0), 90))
 
 # insert part_core_ferrite
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_core_ferrite.stl", "assembly_complete_transformer")
+Mesh.insert(u"part_core_ferrite.stl", "assembly_complete_transformer")
 
 FreeCAD.getDocument("assembly_complete_transformer").getObject("part_core_ferrite").Placement = App.Placement(App.Vector(0, 0, 17.3), App.Rotation(App.Vector(1,0,0), 180))
 

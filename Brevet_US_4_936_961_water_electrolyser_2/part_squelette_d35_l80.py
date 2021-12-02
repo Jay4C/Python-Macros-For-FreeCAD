@@ -68,11 +68,11 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_squelette_d35_l80").getObject("Shape"))
 
-stl_file = u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_squelette_d35_l80.stl"
+stl_file = u"part_squelette_d35_l80.stl"
 
 Mesh.export(__objs__, stl_file)
 
-step_file = u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_squelette_d35_l80.step"
+step_file = u"part_squelette_d35_l80.step"
 
 ImportGui.export(__objs__, step_file)
 

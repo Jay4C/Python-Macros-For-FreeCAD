@@ -71,67 +71,67 @@ DOC.recompute()
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("Shape").ShapeColor = (0.67,0.00,0.00)
 
 # insertion part_squelette_secondaire_d80_l80
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_squelette_secondaire_d80_l80.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"part_squelette_secondaire_d80_l80.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_squelette_secondaire_d80_l80").Placement = App.Placement(App.Vector(84, 0, 0), App.Rotation(App.Vector(1,0,0), 0))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_squelette_secondaire_d80_l80").ShapeColor = (0.33,1.00,1.00)
 
 # insertion equerre_assemblage_plat_l100 - 1
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/equerre_assemblage_plat_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"equerre_assemblage_plat_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("equerre_assemblage_plat_l100").Placement = App.Placement(App.Vector(-8, -8, -2), App.Rotation(App.Vector(1,0,0), 0))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("equerre_assemblage_plat_l100").ShapeColor = (1.00,1.00,0.50)
 
 # insertion equerre_assemblage_plat_l100 - 2
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/equerre_assemblage_plat_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"equerre_assemblage_plat_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("equerre_assemblage_plat_l100001").Placement = App.Placement(App.Vector(-8, -8, -4), App.Rotation(App.Vector(1,0,0), 0))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("equerre_assemblage_plat_l100001").ShapeColor = (1.00,0.33,1.00)
 
 # insertion equerre_assemblage_plat_l100 - 3
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/equerre_assemblage_plat_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"equerre_assemblage_plat_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("equerre_assemblage_plat_l100002").Placement = App.Placement(App.Vector(-8, -8, 80), App.Rotation(App.Vector(1,0,0), 0))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("equerre_assemblage_plat_l100002").ShapeColor = (1.00,1.00,0.50)
 
 # insertion equerre_assemblage_plat_l100 - 4
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/equerre_assemblage_plat_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"equerre_assemblage_plat_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("equerre_assemblage_plat_l100003").Placement = App.Placement(App.Vector(-8, -8, 82), App.Rotation(App.Vector(1,0,0), 0))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("equerre_assemblage_plat_l100003").ShapeColor = (1.00,0.33,1.00)
 
 # insertion part_equerre_assemblage_angle_droit_l42 - 1
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_equerre_assemblage_angle_droit_l42.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"part_equerre_assemblage_angle_droit_l42.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_equerre_assemblage_angle_droit_l42").Placement = App.Placement(App.Vector(-8, -32.5, -4), App.Rotation(App.Vector(0,1,0), 90))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_equerre_assemblage_angle_droit_l42").ShapeColor = (1.00,0.33,0.00)
 
 # insertion part_equerre_assemblage_angle_droit_l42 - 2
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_equerre_assemblage_angle_droit_l42.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"part_equerre_assemblage_angle_droit_l42.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_equerre_assemblage_angle_droit_l42001").Placement = App.Placement(App.Vector(78, -32.5, -4), App.Rotation(App.Vector(0,1,0), 90))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_equerre_assemblage_angle_droit_l42001").ShapeColor = (1.00,0.33,0.00)
 
 # insertion part_equerre_assemblage_angle_droit_l42 - 3
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_equerre_assemblage_angle_droit_l42.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"part_equerre_assemblage_angle_droit_l42.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_equerre_assemblage_angle_droit_l42002").Placement = App.Placement(App.Vector(8, -32.5, 84), App.Rotation(App.Vector(0,1,0), -90))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_equerre_assemblage_angle_droit_l42002").ShapeColor = (1.00,0.33,0.00)
 
 # insertion part_equerre_assemblage_angle_droit_l42 - 4
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_equerre_assemblage_angle_droit_l42.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"part_equerre_assemblage_angle_droit_l42.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_equerre_assemblage_angle_droit_l42003").Placement = App.Placement(App.Vector(90, -32.5, 84), App.Rotation(App.Vector(0,1,0), -90))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_equerre_assemblage_angle_droit_l42003").ShapeColor = (1.00,0.33,0.00)
 
 # insertion part_vis_metal_m12_l100 - 1
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_vis_metal_m12_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"part_vis_metal_m12_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_vis_metal_m12_l100").Placement = App.Placement(App.Vector(0, 0, -14), App.Rotation(App.Vector(0,1,0), 0))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_vis_metal_m12_l100").ShapeColor = (0.67,0.67,0.00)
 
 # insertion part_vis_metal_m12_l100 - 2
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_vis_metal_m12_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"part_vis_metal_m12_l100.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_vis_metal_m12_l100001").Placement = App.Placement(App.Vector(84, 0, -14), App.Rotation(App.Vector(0,1,0), 0))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_vis_metal_m12_l100001").ShapeColor = (0.67,0.67,0.00)
 
 # insertion part_ecrou_m12 - 1
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_ecrou_m12.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"part_ecrou_m12.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_ecrou_m12").Placement = App.Placement(App.Vector(0, 0, 86), App.Rotation(App.Vector(0,1,0), 0))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_ecrou_m12").ShapeColor = (0.67,0.33,0.50)
 
 # insertion part_ecrou_m12 - 2
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_ecrou_m12.stl", "assembly_of_the_voltage_intensifier_circuit")
+Mesh.insert(u"part_ecrou_m12.stl", "assembly_of_the_voltage_intensifier_circuit")
 FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_ecrou_m12001").Placement = App.Placement(App.Vector(84, 0, 86), App.Rotation(App.Vector(0,1,0), 0))
 FreeCADGui.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_ecrou_m12001").ShapeColor = (0.67,0.33,0.50)
 
@@ -151,7 +151,7 @@ __objs__.append(FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit
 __objs__.append(FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_ecrou_m12"))
 __objs__.append(FreeCAD.getDocument("assembly_of_the_voltage_intensifier_circuit").getObject("part_ecrou_m12001"))
 
-Mesh.export(__objs__,u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/assembly_of_the_voltage_intensifier_circuit.stl")
+Mesh.export(__objs__,u"assembly_of_the_voltage_intensifier_circuit.stl")
  
 del __objs__
 

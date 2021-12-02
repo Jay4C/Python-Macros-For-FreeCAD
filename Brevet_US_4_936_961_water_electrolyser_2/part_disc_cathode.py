@@ -31,22 +31,22 @@ disc_cathode = Part.makeBox(162, 162, 5)
 cylinder_screw = Part.makeCylinder(2.5, 5)
 
 # Cut the holes for fixing the disc on the bottom support
-# hole n°1
+# hole nï¿½1
 cylinder_screw_vector = FreeCAD.Vector(5.5, 5.5, 0)
 cylinder_screw.translate(cylinder_screw_vector)
 disc_cathode = disc_cathode.cut(cylinder_screw)
 
-# hole n°2
+# hole nï¿½2
 cylinder_screw_vector = FreeCAD.Vector(151, 0, 0)
 cylinder_screw.translate(cylinder_screw_vector)
 disc_cathode = disc_cathode.cut(cylinder_screw)
 
-# hole n°3
+# hole nï¿½3
 cylinder_screw_vector = FreeCAD.Vector(0, 151, 0)
 cylinder_screw.translate(cylinder_screw_vector)
 disc_cathode = disc_cathode.cut(cylinder_screw)
 
-# hole n°4
+# hole nï¿½4
 cylinder_screw_vector = FreeCAD.Vector(-151, 0, 0)
 cylinder_screw.translate(cylinder_screw_vector)
 disc_cathode = disc_cathode.cut(cylinder_screw)
@@ -117,7 +117,7 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_disc_cathode").getObject("Shape"))
 
-stl_file = u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Stanley_Meyer/Brevet_US_4_936_961_water_electrolyser_2/part_disc_cathode.stl"
+stl_file = u"part_disc_cathode.stl"
 
 Mesh.export(__objs__, stl_file)
 

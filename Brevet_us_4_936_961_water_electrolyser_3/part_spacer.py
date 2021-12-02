@@ -29,19 +29,19 @@ EPS = 0.10
 EPS_C = EPS * -0.5
 
 # spacer
-spacer = Part.makeCylinder(4.5, 15)
+spacer = Part.makeCylinder(4.5, 13)
 
 # anode
-anode = Part.makeCylinder(2, 15)
+anode = Part.makeCylinder(2, 13)
 
 # cut spacer by anode
 spacer = spacer.cut(anode)
 
 # space_anode_cathode
-space_anode_cathode = Part.makeCylinder(4.5, 13)
+space_anode_cathode = Part.makeCylinder(4.5, 12)
 
 # space_plus_anode
-space_plus_anode = Part.makeCylinder(3, 13)
+space_plus_anode = Part.makeCylinder(3, 12)
 
 # space_anode_cathode cut by space_plus_anode
 space_anode_cathode = space_anode_cathode.cut(space_plus_anode)
@@ -57,7 +57,7 @@ for i in range(int(360/degre)):
     radius = 2
     alpha=(i*degre*math.pi)/180
     space_bubble_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
-    space_bubble = Part.makeCylinder(0.3, 15)
+    space_bubble = Part.makeCylinder(0.3, 13)
     space_bubble.translate(space_bubble_vector)
     spacer = spacer.cut(space_bubble)
 
@@ -74,3 +74,4 @@ stl_file = u"part_spacer.stl"
 Mesh.export(__objs__, stl_file)
 
 setview()
+        
