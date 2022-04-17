@@ -306,29 +306,29 @@ cylinder_2 = Part.makeCylinder(2.5, 2)
 cylinder_1 = cylinder_1.cut(cylinder_2)
 
 # holes for fixing the disc anode and the disc cathode
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 2)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-for i in range(int(360/degre)):
+for i in range(int(360/degree)):
     radius = 14.25
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(6, 2)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
-degres = [30, 90, 150, -30, -90, -150]
+degrees = [30, 90, 150, -30, -90, -150]
 
-for degre in degres:
+for degree in degrees:
     radius = 24
-    alpha=(int(degre)*math.pi)/180
+    alpha=(int(degree)*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(6, 2)
     hole.translate(hole_vector)
@@ -416,40 +416,40 @@ cylinder_2 = Part.makeCylinder(2.5, 1)
 cylinder_1 = cylinder_1.cut(cylinder_2)
 
 # holes for fixing the anodes and letting the mixture to go out
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 1)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
     
 # holes for fixing the cathodes
-degres = [60, 180, 300]
-for degre in degres:
+degrees = [60, 180, 300]
+for degree in degrees:
     radius = 32
-    alpha=(degre*math.pi)/180
+    alpha=(degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(9, 1)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-degre = 90
-for i in range(int(360/degre)):
+degree = 90
+for i in range(int(360/degree)):
     radius = 7.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 1)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-degre = 45
-for i in range(int(360/degre)):
+degree = 45
+for i in range(int(360/degree)):
     radius = 17.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 1)
     hole.translate(hole_vector)
@@ -537,29 +537,29 @@ cylinder_2 = Part.makeCylinder(2.5, 2)
 cylinder_1 = cylinder_1.cut(cylinder_2)
 
 # holes for fixing the disc anode and the disc cathode
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 2)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-for i in range(int(360/degre)):
+for i in range(int(360/degree)):
     radius = 14.25
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(6, 2)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
-degres = [30, 90, 150, -30, -90, -150]
+degrees = [30, 90, 150, -30, -90, -150]
 
-for degre in degres:
+for degree in degrees:
     radius = 24
-    alpha=(int(degre)*math.pi)/180
+    alpha=(int(degree)*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(6, 2)
     hole.translate(hole_vector)
@@ -581,10 +581,10 @@ FreeCADGui.getDocument("assembly").getObject("part_rondelle_m5_12d001").ShapeCol
 
 # For placing all the part_rondelle_m5_12d for fixing the anodes and the cathodes
 i1 = 2
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     part_rondelle_m5_d12_vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -1)
     Mesh.insert(u"part_rondelle_m5_12d.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_rondelle_m5_12d00" + str(i1)).Placement = App.Placement(part_rondelle_m5_d12_vector, App.Rotation(App.Vector(0,1,0), 0))
@@ -593,18 +593,18 @@ for i in range(int(360/degre)):
 
 # For placing all the part_rondelle_m5_12d for fixing the anodes and the cathodes
 i1 = 8
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     if i1 < 10:
         radius = 32 - 3.5 - 2.5
-        alpha=(i*degre*math.pi)/180
+        alpha=(i*degree*math.pi)/180
         part_rondelle_m5_d12_vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 2)
         Mesh.insert(u"part_rondelle_m5_12d.stl", "assembly")
         FreeCAD.getDocument("assembly").getObject("part_rondelle_m5_12d00" + str(i1)).Placement = App.Placement(part_rondelle_m5_d12_vector, App.Rotation(App.Vector(0,1,0), 0))
         FreeCADGui.getDocument("assembly").getObject("part_rondelle_m5_12d00" + str(i1)).ShapeColor = (0.67,0.33,0.50)
     else:
         radius = 32 - 3.5 - 2.5
-        alpha=(i*degre*math.pi)/180
+        alpha=(i*degree*math.pi)/180
         part_rondelle_m5_d12_vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 2)
         Mesh.insert(u"part_rondelle_m5_12d.stl", "assembly")
         FreeCAD.getDocument("assembly").getObject("part_rondelle_m5_12d0" + str(i1)).Placement = App.Placement(part_rondelle_m5_d12_vector, App.Rotation(App.Vector(0,1,0), 0))
@@ -619,10 +619,10 @@ FreeCADGui.getDocument("assembly").getObject("part_vis_metal_m5_100l").ShapeColo
 
 # For placing all the part_vis_metal_m5_100l for fixing the anodes and the cathodes
 i1 = 1
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -3)
     Mesh.insert(u"part_vis_metal_m5_100l.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_vis_metal_m5_100l00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,1,0), 0))
@@ -636,10 +636,10 @@ FreeCADGui.getDocument("assembly").getObject("part_ecrou_5m").ShapeColor = (1.00
 
 # For placing all the part_ecrou_5m for fixing the anodes and the cathodes
 i1 = 1
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 3)
     Mesh.insert(u"part_ecrou_5m.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_ecrou_5m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,1,0), 0))
@@ -648,10 +648,10 @@ for i in range(int(360/degre)):
 
 # For placing all the part_rondelle_m5_12d for fixing the anodes and the cathodes
 i1 = 14
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     part_rondelle_m5_d12_vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 7)
     Mesh.insert(u"part_rondelle_m5_12d.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_rondelle_m5_12d0" + str(i1)).Placement = App.Placement(part_rondelle_m5_d12_vector, App.Rotation(App.Vector(0,1,0), 0))
@@ -665,10 +665,10 @@ FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate").ShapeColor 
 
 # For placing all the part_rondelle_m5_12d for fixing the anodes and the cathodes
 i1 = 20
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     part_rondelle_m5_d12_vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 9)
     Mesh.insert(u"part_rondelle_m5_12d.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_rondelle_m5_12d0" + str(i1)).Placement = App.Placement(part_rondelle_m5_d12_vector, App.Rotation(App.Vector(0,1,0), 0))
@@ -682,10 +682,10 @@ FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate001").ShapeCol
 
 # For placing all the part_rondelle_m5_12d for fixing the anodes and the cathodes
 i1 = 26
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     part_rondelle_m5_d12_vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 11)
     Mesh.insert(u"part_rondelle_m5_12d.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_rondelle_m5_12d0" + str(i1)).Placement = App.Placement(part_rondelle_m5_d12_vector, App.Rotation(App.Vector(0,1,0), 0))
@@ -699,10 +699,10 @@ FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate002").ShapeCol
 
 # For placing all the part_rondelle_m5_12d for fixing the anodes and the cathodes
 i1 = 32
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     part_rondelle_m5_d12_vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 13)
     Mesh.insert(u"part_rondelle_m5_12d.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_rondelle_m5_12d0" + str(i1)).Placement = App.Placement(part_rondelle_m5_d12_vector, App.Rotation(App.Vector(0,1,0), 0))
@@ -716,10 +716,10 @@ FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate003").ShapeCol
 
 # For placing all the part_rondelle_m5_12d for fixing the anodes and the cathodes
 i1 = 38
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 32 - 3.5 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     part_rondelle_m5_d12_vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 15)
     Mesh.insert(u"part_rondelle_m5_12d.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_rondelle_m5_12d0" + str(i1)).Placement = App.Placement(part_rondelle_m5_d12_vector, App.Rotation(App.Vector(0,1,0), 0))

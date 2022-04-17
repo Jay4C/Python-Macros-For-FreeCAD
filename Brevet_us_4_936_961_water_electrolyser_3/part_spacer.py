@@ -52,10 +52,10 @@ space_anode_cathode.translate(space_anode_cathode_vector)
 spacer = spacer.cut(space_anode_cathode)
 
 # space_bubble
-degre = 10
-for i in range(int(360/degre)):
+degree = 10
+for i in range(int(360/degree)):
     radius = 2
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     space_bubble_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     space_bubble = Part.makeCylinder(0.3, 13)
     space_bubble.translate(space_bubble_vector)

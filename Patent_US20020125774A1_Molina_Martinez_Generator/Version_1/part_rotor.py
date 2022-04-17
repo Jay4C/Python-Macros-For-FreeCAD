@@ -38,20 +38,20 @@ cylinder_1 = Part.makeCylinder(2.5, 1)
 part_rotor = part_rotor.cut(cylinder_1)
 
 # holes for fixing the rotors
-degre = 180
-for i in range(int(360/degre)):
+degree = 180
+for i in range(int(360/degree)):
     radius = 2.5 + 10 + 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 1)
     hole.translate(hole_vector)
     part_rotor = part_rotor.cut(hole)
 
 # holes for fixing the wires
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     radius = maximal_diameter/2 - 5 - 5 - 5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(6.5, 1)
     hole.translate(hole_vector)

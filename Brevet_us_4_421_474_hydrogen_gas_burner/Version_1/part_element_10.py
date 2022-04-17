@@ -47,10 +47,10 @@ cylinder_3.translate(cylinder_3_vector)
 cylinder_1 = cylinder_1.cut(cylinder_3)
 
 # holes for fixing the gas burner
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 11 + 5 + 1.5 + 2.5 + 3.5 + 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 5)
     hole.translate(hole_vector)
@@ -65,24 +65,24 @@ cylinder_5 = cylinder_5.cut(cylinder_6)
 cylinder_1 = cylinder_1.cut(cylinder_5)
 
 # Cut the holes for fixing the air
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     axe_y = FreeCAD.Vector(0, 1, 0)
     axe_z = FreeCAD.Vector(0, 0, 1)
     radius_hole = 11 + 3.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     cylinder_vector = FreeCAD.Vector(radius_hole*math.cos(alpha), radius_hole*math.sin(alpha), 4 + 7.5)
     cylinder = Part.makeCylinder(2.5, 10, cylinder_vector, axe_y)
     cylinder.rotate(cylinder_vector, axe_z, alpha*(360/(2*math.pi)) - 90)
     cylinder_1 = cylinder_1.cut(cylinder)
 
 # Cut the holes for fixing the air
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     axe_y = FreeCAD.Vector(0, 1, 0)
     axe_z = FreeCAD.Vector(0, 0, 1)
     radius_hole = 11 + 3.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     cylinder_vector = FreeCAD.Vector(radius_hole*math.cos(alpha), radius_hole*math.sin(alpha), 70 - 7.5)
     cylinder = Part.makeCylinder(2.5, 10, cylinder_vector, axe_y)
     cylinder.rotate(cylinder_vector, axe_z, alpha*(360/(2*math.pi)) - 90)

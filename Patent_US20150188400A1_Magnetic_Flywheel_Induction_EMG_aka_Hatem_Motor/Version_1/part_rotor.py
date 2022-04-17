@@ -40,30 +40,30 @@ cylinder_1 = Part.makeCylinder(5, maximal_heigth)
 part_rotor = part_rotor.cut(cylinder_1)
 
 # holes for fixing the magnets
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     radius = maximal_diameter/2 - 12.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(7.5, maximal_heigth)
     hole.translate(hole_vector)
     part_rotor = part_rotor.cut(hole)
 
 # holes for the cooling
-degre = 90
-for i in range(int(360/degre)):
+degree = 90
+for i in range(int(360/degree)):
     radius = 5 + 12.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(7.5, maximal_heigth)
     hole.translate(hole_vector)
     part_rotor = part_rotor.cut(hole)
 
 # holes for the cooling
-degres = [1*45, 3*45, 5*45, 7*45]
-for degre in degres:
+degrees = [1*45, 3*45, 5*45, 7*45]
+for degree in degrees:
     radius = math.sqrt(2*math.pow(16.25,2))
-    alpha=(degre*math.pi)/180
+    alpha=(degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(7.5, maximal_heigth)
     hole.translate(hole_vector)

@@ -34,10 +34,10 @@ diametre_maximal_of_the_chamber = 500
 part_bottom_support = Part.makeCylinder((diametre_maximal_of_the_chamber + 10*2 + 10*2 + 10*2)/2, 5)
 
 # holes for fixing the bottom support
-degre = 90
-for i in range(int(360/degre)):
+degree = 90
+for i in range(int(360/degree)):
     radius = (diametre_maximal_of_the_chamber)/2 + 10 + 5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 5)
     hole.translate(hole_vector)

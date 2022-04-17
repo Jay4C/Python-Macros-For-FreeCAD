@@ -46,10 +46,10 @@ cylinder_2.translate(cylinder_2_vector)
 cylinder_1 = cylinder_1.cut(cylinder_2)
 
 # holes for fixing the tank
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = diametre_maximal/2 - 7.5 - 5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 6)
     hole.translate(hole_vector)
@@ -66,20 +66,20 @@ cylinder_6 = Part.makeCylinder(15, 3)
 cylinder_1 = cylinder_1.cut(cylinder_6)
 
 # holes for the water input, the gas output, the pressure sensor
-degre = 120
-for i in range(int(360/degre)):
+degree = 120
+for i in range(int(360/degree)):
     radius = diametre_maximal/3.75
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(8, 6)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for placing the water input, the gas output, the pressure sensor
-degre = 120
-for i in range(int(360/degre)):
+degree = 120
+for i in range(int(360/degree)):
     radius = diametre_maximal/3.75
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(15, 3)
     hole.translate(hole_vector)
