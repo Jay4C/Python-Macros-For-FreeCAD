@@ -86,7 +86,7 @@ degre = 60
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -2)
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_rondelle_10m.stl", "light_assembly")
+Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_rondelle_10m").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_rondelle_10m").ShapeColor = (1.00,1.00,0.00)
 
@@ -97,14 +97,14 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -2)
-    Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_rondelle_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_rondelle_10m00" + str(i1)).ShapeColor = (1.00,1.00,0.00)
     i1 += 1
 
 # For placing the part_rondelle_10m
 for i in range(6, 8):
-    Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
 
 for i in range(6, 8):
     alpha=(i*180*math.pi)/180
@@ -120,7 +120,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 6)
-    Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
 
     if i1 < 10:
         FreeCAD.getDocument("light_assembly").getObject("part_rondelle_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
@@ -133,7 +133,7 @@ for degre in degres:
 
 # For placing the part_rondelle_10m
 for i in range(14, 16):
-    Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
 
 for i in range(14, 16):
     alpha=(i*180*math.pi)/180
@@ -148,7 +148,7 @@ k = 6.40
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_vis_metal_m10_200l.stl", "light_assembly")
+Mesh.insert(u"part_vis_metal_m10_200l.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_vis_metal_m10_200l").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_vis_metal_m10_200l").ShapeColor = (0.00,1.00,1.00)
 
@@ -160,7 +160,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-    Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_vis_metal_m10_200l.stl", "light_assembly")
+    Mesh.insert(u"part_vis_metal_m10_200l.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_vis_metal_m10_200l00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_vis_metal_m10_200l00" + str(i1)).ShapeColor = (0.00,1.00,1.00)
     i1 += 1
@@ -171,7 +171,7 @@ k = 6.40
 radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_vis_metal_m10_150l.stl", "light_assembly")
+Mesh.insert(u"part_vis_metal_m10_150l.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_vis_metal_m10_150l").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_vis_metal_m10_150l").ShapeColor = (0.00,1.00,1.00)
 
@@ -183,7 +183,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-    Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_vis_metal_m10_150l.stl", "light_assembly")
+    Mesh.insert(u"part_vis_metal_m10_150l.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_vis_metal_m10_150l00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_vis_metal_m10_150l00" + str(i1)).ShapeColor = (0.00,1.00,1.00)
     i1 += 1
@@ -193,7 +193,7 @@ degre = 60
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_ecrou_10m.stl", "light_assembly")
+Mesh.insert(u"part_ecrou_10m.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_ecrou_10m").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_ecrou_10m").ShapeColor = (0.00,0.00,1.00)
 
@@ -204,7 +204,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-    Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_ecrou_10m.stl", "light_assembly")
+    Mesh.insert(u"part_ecrou_10m.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_ecrou_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_ecrou_10m00" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     i1 += 1
@@ -214,7 +214,7 @@ degre = 180
 radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_ecrou_10m.stl", "light_assembly")
+Mesh.insert(u"part_ecrou_10m.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_ecrou_10m006").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_ecrou_10m006").ShapeColor = (0.00,0.00,1.00)
 
@@ -225,14 +225,14 @@ for degre in degres:
     radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-    Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_ecrou_10m.stl", "light_assembly")
+    Mesh.insert(u"part_ecrou_10m.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_ecrou_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_ecrou_10m00" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     i1 += 1
 
 # For placing the part_rondelle_10m
 for i in range(16, 18):
-    Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
 
 for i in range(16, 18):
     alpha=(i*180*math.pi)/180
@@ -243,7 +243,7 @@ for i in range(16, 18):
 
 # insertion part_capacitor_plate - 0
 vector = App.Vector(0, 0, 20)
-Mesh.insert(u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_capacitor_plate.stl", "light_assembly")
+Mesh.insert(u"part_capacitor_plate.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_capacitor_plate").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 90))
 FreeCADGui.getDocument("light_assembly").getObject("part_capacitor_plate").ShapeColor = (0.00,0.50,0.50)
 
@@ -251,63 +251,63 @@ setview()
 
 # Generate PNG files
 file = 'light_assembly_'
-# Ombré
+# Ombrï¿½
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
 Gui.activeDocument().activeView().viewIsometric()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewFront()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewTop()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewRight()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewRear()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewBottom()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewLeft()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 # Filaire
 Gui.runCommand('Std_DrawStyle',2)
 i += 1
 Gui.activeDocument().activeView().viewIsometric()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewFront()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewTop()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewRight()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewRear()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewBottom()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewLeft()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
         

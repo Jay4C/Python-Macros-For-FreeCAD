@@ -52,11 +52,11 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_capteur_de_volume").getObject("Shape"))
 
-step_file = u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_capteur_de_volume.step"
+step_file = u"part_capteur_de_volume.step"
 
 ImportGui.export(__objs__, step_file)
 
-stl_file = u"A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/CAO/1_Holomorphe/Archie_Blue/Brevet_us_4_124_463_water_electrolyzer_3/part_capteur_de_volume.stl"
+stl_file = u"part_capteur_de_volume.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -66,63 +66,63 @@ setview()
 
 # Generate PNG files
 file = 'part_capteur_de_volume_'
-# Ombré
+# Ombrï¿½
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
 Gui.activeDocument().activeView().viewIsometric()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewFront()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewTop()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewRight()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewRear()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewBottom()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewLeft()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 # Filaire
 Gui.runCommand('Std_DrawStyle',2)
 i += 1
 Gui.activeDocument().activeView().viewIsometric()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewFront()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewTop()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewRight()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewRear()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewBottom()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 
 i += 1
 Gui.activeDocument().activeView().viewLeft()
-Gui.activeDocument().activeView().saveImage('A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__Flask__Cristal_Ball/Test/Service/Archives/Images_To_Videos/1_Holomorphe/Archie_Blue/3/' + file + str(i) + '.png',1117,388,'Current')
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
         
