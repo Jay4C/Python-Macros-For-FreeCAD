@@ -38,10 +38,10 @@ cylinder_1 = Part.makeCylinder(diametre_maximal_of_nozzle_front/2 - 3.5 - 5 - 4.
 part_nozzle = part_nozzle.cut(cylinder_1)
 
 # holes for fixing the nozzle
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = diametre_maximal_of_nozzle_front/2 - 2.5 - 3.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 3)
     hole.translate(hole_vector)

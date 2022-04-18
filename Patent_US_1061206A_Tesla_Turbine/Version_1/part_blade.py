@@ -38,10 +38,10 @@ cylinder_1 = Part.makeCylinder(30/2, 3)
 part_blade = part_blade.cut(cylinder_1)
 
 # holes for evacuating the fluid from all the blades
-degre = 45
-for i in range(int(360/degre)):
+degree = 45
+for i in range(int(360/degree)):
     radius = 52/2 + 10
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(10, 3)
     hole.translate(hole_vector)

@@ -43,49 +43,49 @@ cylinder_2 = Part.makeCylinder(25, epaisseur)
 cylinder_1 = cylinder_1.cut(cylinder_2)
 
 # holes for fixing the anodes and the cathodes
-degre = 90
+degree = 90
 radius = diametre_maximal_capacitor_plate/2 - 5 - 5
-alpha=(degre*math.pi)/180
+alpha=(degree*math.pi)/180
 hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
 hole = Part.makeCylinder(5, epaisseur)
 hole.translate(hole_vector)
 cylinder_1 = cylinder_1.cut(hole)
 
 # holes for fixing the cathodes
-degre = 270
+degree = 270
 radius = diametre_maximal_capacitor_plate/2
-alpha=(degre*math.pi)/180
+alpha=(degree*math.pi)/180
 hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
 hole = Part.makeCylinder(16.50, epaisseur)
 hole.translate(hole_vector)
 cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     radius = diametre_maximal_capacitor_plate/2 - 5 - 5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, epaisseur)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-degre = 90
-for i in range(int(360/degre)):
+degree = 90
+for i in range(int(360/degree)):
     radius = 20
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, epaisseur)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     for i_1 in range(2, 4):
         radius = 20 * i_1
-        alpha=(i*degre*math.pi)/180
+        alpha=(i*degree*math.pi)/180
         hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
         hole = Part.makeCylinder(5, epaisseur)
         hole.translate(hole_vector)

@@ -467,10 +467,10 @@ cylinder_3.translate(cylinder_3_vector)
 cylinder_1 = cylinder_1.cut(cylinder_3)
 
 # cylinder_1 cut by cylinder_5 in several times
-degre = 40
-for i in range(int(360/degre)):
+degree = 40
+for i in range(int(360/degree)):
     radius = 5 + 1.5 + 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     cylinder_5_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     cylinder_5 = Part.makeCylinder(2.5, 80)
     cylinder_5.translate(cylinder_5_vector)
@@ -1214,10 +1214,10 @@ space_anode_cathode.translate(space_anode_cathode_vector)
 spacer = spacer.cut(space_anode_cathode)
 
 # space_bubble
-degre = 10
-for i in range(int(360/degre)):
+degree = 10
+for i in range(int(360/degree)):
     radius = 2
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     space_bubble_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     space_bubble = Part.makeCylinder(0.3, 15)
     space_bubble.translate(space_bubble_vector)

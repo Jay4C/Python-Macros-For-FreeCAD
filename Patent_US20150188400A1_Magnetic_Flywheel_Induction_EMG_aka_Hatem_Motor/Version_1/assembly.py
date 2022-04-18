@@ -37,15 +37,15 @@ FreeCADGui.getDocument("assembly").getObject("part_rotor").ShapeColor = (0.30,0.
 FreeCADGui.getDocument("assembly").getObject("part_rotor").Transparency = 40
 
 # insertion part_magnet for fixing the magnets
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     axe_x = FreeCAD.Vector(1, 0, 0)    
     axe_y = FreeCAD.Vector(0, 1, 0)
     axe_z = FreeCAD.Vector(0, 0, 1)
     
     Mesh.insert(u"part_magnet.stl", "assembly")
     radius = maximal_diameter/2 + 3
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     magnet_vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 7.5)
     rotation_magnet_vector = App.Rotation(alpha*(360/(2*math.pi)) - 90, 0, 90)
     
@@ -64,7 +64,7 @@ setview()
 __objs__ = []
 __objs__.append(FreeCAD.getDocument("assembly").getObject("part_rotor"))
 
-for i1 in range(int(360/degre)):
+for i1 in range(int(360/degree)):
     if i1 < 1:
         __objs__.append(FreeCAD.getDocument("assembly").getObject("part_magnet"))
     elif i1 >=1 and i1 < 10:

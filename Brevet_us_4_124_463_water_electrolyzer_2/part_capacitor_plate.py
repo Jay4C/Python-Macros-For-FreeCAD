@@ -41,51 +41,51 @@ cylinder_2 = Part.makeCylinder(5, 1)
 cylinder_1 = cylinder_1.cut(cylinder_2)
 
 # holes for fixing the anodes
-degre = 120
-for i in range(int(360/degre)):
+degree = 120
+for i in range(int(360/degree)):
     radius = diametre_maximal_capacitor_plate/2 - 4 - 5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 1)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for fixing the cathodes
-degres = [60, 180, 300]
-for degre in degres:
+degrees = [60, 180, 300]
+for degree in degrees:
     radius = diametre_maximal_capacitor_plate/2
-    alpha=(degre*math.pi)/180
+    alpha=(degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(15.5, 1)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-degre = 10
-for i in range(int(360/degre)):
+degree = 10
+for i in range(int(360/degree)):
     radius = diametre_maximal_capacitor_plate/2 - 4 - 5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 1)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-degre = 90
-for i in range(int(360/degre)):
+degree = 90
+for i in range(int(360/degree)):
     radius = 20
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 1)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas mixture to go out
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     for i_1 in range(2, 5):
         radius = 20 * i_1
-        alpha=(i*degre*math.pi)/180
+        alpha=(i*degree*math.pi)/180
         hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
         hole = Part.makeCylinder(5, 1)
         hole.translate(hole_vector)

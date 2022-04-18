@@ -53,20 +53,20 @@ cylinder_3.translate(cylinder_3_vector)
 cylinder_1 = cylinder_1.cut(cylinder_3)
 
 # holes for fixing the tank
-degre = 10
-for i in range(int(360/degre)):
+degree = 10
+for i in range(int(360/degree)):
     radius = diametre_maximal/2 - 3 - 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 3)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for fixing the anodes and the cathodes
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = diametre_maximal/2 - 3 - 5 - 3 - 2 - 3 - 2 - 2 - 4 - 5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 3)
     hole.translate(hole_vector)
@@ -77,9 +77,9 @@ Part.show(cylinder_1)
 DOC.recompute()
 
 # insertion part_rondelle_m10_17d - 0
-degre = 60
+degree = 60
 radius = diametre_maximal/2 - 3 - 5 - 3 - 2 - 3 - 2 - 2 - 4 - 5
-alpha=(degre*math.pi)/180
+alpha=(degree*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -1)
 Mesh.insert(u"part_rondelle_m10_17d.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_rondelle_m10_17d").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
@@ -87,10 +87,10 @@ FreeCADGui.getDocument("assembly").getObject("part_rondelle_m10_17d").ShapeColor
 
 # For placing the part_rondelle_m10_17d
 i1 = 1
-degres = [120, 180, 240, 300, 360]
-for degre in degres:
+degrees = [120, 180, 240, 300, 360]
+for degree in degrees:
     radius = diametre_maximal/2 - 3 - 5 - 3 - 2 - 3 - 2 - 2 - 4 - 5
-    alpha=(degre*math.pi)/180
+    alpha=(degree*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -1)
     Mesh.insert(u"part_rondelle_m10_17d.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_rondelle_m10_17d00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
@@ -114,9 +114,9 @@ for i in range(7, 13):
         FreeCADGui.getDocument("assembly").getObject("part_rondelle_m10_17d0" + str(i)).ShapeColor = (1.00,1.00,0.00)
 
 # insertion part_vis_metal_m10_200l - 0
-degre = 60
+degree = 60
 radius = diametre_maximal/2 - 3 - 5 - 3 - 2 - 3 - 2 - 2 - 4 - 5
-alpha=(degre*math.pi)/180
+alpha=(degree*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -3)
 Mesh.insert(u"part_vis_metal_m10_200l.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_vis_metal_m10_200l").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
@@ -124,10 +124,10 @@ FreeCADGui.getDocument("assembly").getObject("part_vis_metal_m10_200l").ShapeCol
 
 # For placing the part_vis_metal_m10_200l
 i1 = 1
-degres = [120, 180, 240, 300, 360]
-for degre in degres:
+degrees = [120, 180, 240, 300, 360]
+for degree in degrees:
     radius = diametre_maximal/2 - 3 - 5 - 3 - 2 - 3 - 2 - 2 - 4 - 5
-    alpha=(degre*math.pi)/180
+    alpha=(degree*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -3)
     Mesh.insert(u"part_vis_metal_m10_200l.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_vis_metal_m10_200l00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
@@ -135,9 +135,9 @@ for degre in degres:
     i1 += 1
     
 # insertion part_ecrou_10m - 0
-degre = 60
+degree = 60
 radius = diametre_maximal/2 - 3 - 5 - 3 - 2 - 3 - 2 - 2 - 4 - 5
-alpha=(degre*math.pi)/180
+alpha=(degree*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 4)
 Mesh.insert(u"part_ecrou_10m.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_ecrou_10m").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
@@ -145,10 +145,10 @@ FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m").ShapeColor = (0.0
 
 # For placing the part_ecrou_10m
 i1 = 1
-degres = [120, 180, 240, 300, 360]
-for degre in degres:
+degrees = [120, 180, 240, 300, 360]
+for degree in degrees:
     radius = diametre_maximal/2 - 3 - 5 - 3 - 2 - 3 - 2 - 2 - 4 - 5
-    alpha=(degre*math.pi)/180
+    alpha=(degree*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 4)
     Mesh.insert(u"part_ecrou_10m.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_ecrou_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))

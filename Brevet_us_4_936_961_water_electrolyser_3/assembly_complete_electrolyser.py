@@ -36,29 +36,29 @@ cylinder_2 = Part.makeCylinder(2.5, 2)
 cylinder_1 = cylinder_1.cut(cylinder_2)
 
 # holes for fixing the disc anode and the disc cathode
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 28.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 2)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for letting the gas miwture to go out
-for i in range(int(360/degre)):
+for i in range(int(360/degree)):
     radius = 14.25
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 2)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
-degres = [30, 90, 150, -30, -90, -150]
+degrees = [30, 90, 150, -30, -90, -150]
 
-for degre in degres:
+for degree in degrees:
     radius = 24
-    alpha=(int(degre)*math.pi)/180
+    alpha=(int(degree)*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 2)
     hole.translate(hole_vector)

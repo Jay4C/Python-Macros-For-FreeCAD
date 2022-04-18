@@ -46,30 +46,30 @@ cylinder_2.translate(cylinder_2_vector)
 cylinder_1 = cylinder_1.cut(cylinder_2)
 
 # holes for fixing the tank
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = diametre_maximal/2 - 7.5 - 5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 6)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for fixing the anodes and the cathodes
-degre = 180
-for i in range(int(360/degre)):
+degree = 180
+for i in range(int(360/degree)):
     radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 6)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
 # holes for fixing the bottom support
-degres = [90, 210, 330]
-for degre in degres:
+degrees = [90, 210, 330]
+for degree in degrees:
     radius = diametre_maximal/2 - 7.5 - 5
-    alpha=(degre*math.pi)/180
+    alpha=(degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 6)
     hole.translate(hole_vector)

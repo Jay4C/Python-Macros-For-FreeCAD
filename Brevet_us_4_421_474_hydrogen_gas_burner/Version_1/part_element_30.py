@@ -53,10 +53,10 @@ cylinder_4.translate(cylinder_4_vector)
 cylinder_1 = cylinder_1.cut(cylinder_4)
 
 # holes for fixing the gas burner
-degre = 60
-for i in range(int(360/degre)):
+degree = 60
+for i in range(int(360/degree)):
     radius = 11 + 5 + 1.5 + 2.5 + 3.5 + 2.5
-    alpha=(i*degre*math.pi)/180
+    alpha=(i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 5)
     hole.translate(hole_vector)

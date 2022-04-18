@@ -60,30 +60,30 @@ cylinder_1 = Part.makeCylinder(5, 1)
 part_electrode_laser_cutting = part_electrode_laser_cutting.cut(cylinder_1)
 
 # holes for the thrust
-degre = 90
-for i in range(int(360/degre)):
+degree = 90
+for i in range(int(360/degree)):
     radius = 15
-    alpha = (i*degre*math.pi)/180
+    alpha = (i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 1)
     hole.translate(hole_vector)
     part_electrode_laser_cutting = part_electrode_laser_cutting.cut(hole)
 
 # holes for the thrust
-degre = 30
-for i in range(int(360/degre)):
+degree = 30
+for i in range(int(360/degree)):
     radius = 30
-    alpha = (i*degre*math.pi)/180
+    alpha = (i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(5, 1)
     hole.translate(hole_vector)
     part_electrode_laser_cutting = part_electrode_laser_cutting.cut(hole)
 
 # holes for fixing the electrodes together
-degre = 15
-for i in range(int(360/degre)):
+degree = 15
+for i in range(int(360/degree)):
     radius = 45
-    alpha = (i*degre*math.pi)/180
+    alpha = (i*degree*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
     hole = Part.makeCylinder(2.5, 1)
     hole.translate(hole_vector)
