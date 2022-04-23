@@ -4,7 +4,7 @@ FILE_DESCRIPTION(('FreeCAD Model'),'2;1');
 FILE_NAME(
 'A:/1_Professionnel/1_Holomorphe/2_Archives/2_Outils_Numeriques/Python__
 Flask__Cristal_Ball/Test/Service/Archives/CAO/2_Specials/Edwin_Gray_
-Power_Tube/part_coil_transformer.step','2021-05-27T11:18:50',('Author'),
+Power_Tube/part_coil_transformer.step','2021-05-30T18:52:00',('Author'),
   (''),'Open CASCADE STEP processor 7.3','FreeCAD','Unknown');
 FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));
 ENDSEC;
