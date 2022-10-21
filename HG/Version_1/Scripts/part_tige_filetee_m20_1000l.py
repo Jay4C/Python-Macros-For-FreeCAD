@@ -39,7 +39,7 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("tige_filetee_m20_1000l").getObject("Shape"))
 
-stl_file = u"part_tige_filetee_m20_1000l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_tige_filetee_m20_1000l.stl"
 
 Mesh.export(__objs__, stl_file)
 

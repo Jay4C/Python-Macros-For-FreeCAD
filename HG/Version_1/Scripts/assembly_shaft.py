@@ -31,7 +31,7 @@ EPS_C = EPS * -0.5
 assembly = "assembly_shaft"
 
 # part_tige_filetee_m20_1000l
-part_tige_filetee_m20_1000l_stl_file = u"part_tige_filetee_m20_1000l.stl"
+part_tige_filetee_m20_1000l_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_tige_filetee_m20_1000l.stl"
 Mesh.insert(part_tige_filetee_m20_1000l_stl_file,assembly)
 FreeCADGui.getDocument(assembly).getObject("part_tige_filetee_m20_1000l").ShapeColor = (0.10,0.10,0.10)
 FreeCAD.getDocument(assembly).getObject("part_tige_filetee_m20_1000l").Placement = App.Placement(App.Vector(0,0,0),App.Rotation(App.Vector(0,0,1),0))
@@ -40,7 +40,7 @@ FreeCAD.getDocument(assembly).getObject("part_tige_filetee_m20_1000l").Placement
 color = (0.90,0.80,0.70)
 i1 = round((1000 - (20 + 40 + 20*2 + 20 + 20)*2)/23) + 1
 title = 'part_faraday_disc'
-stl_file = u"" + title + ".stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + title + ".stl"
 for i in range(0, i1):
     x = 0
     y = 0
@@ -67,7 +67,7 @@ for i in range(0, i1):
 color = (0.70,0.70,0.70)
 i2 = round((1000 - (20 + 40 + 20*2 + 20 + 20 + 3)*2)/23)
 title = 'part_magnet_1d140_2d60_20e'
-stl_file = u"" + title + ".stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + title + ".stl"
 for i in range(0, i2):
     x = 0
     y = 0
@@ -94,7 +94,7 @@ for i in range(0, i2):
 color = (0.60,0.70,0.90)
 i3 = round((1000 - (20 + 40 + 20*2 + 20 + 20 + 3)*2)/23)
 title = 'assembly_magnets_1d40_2d20_10e'
-stl_file = u"" + title + ".stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + title + ".stl"
 for i in range(0, i3):
     x = 0
     y = 0

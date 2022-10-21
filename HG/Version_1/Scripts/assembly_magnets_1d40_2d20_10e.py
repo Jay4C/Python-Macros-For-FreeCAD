@@ -32,7 +32,7 @@ assembly = "assembly_magnets_1d40_2d20_10e"
 
 # part_magnet_1d40_2d20_10e
 title = "part_magnet_1d40_2d20_10e"
-stl_file = u"" + title + ".stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + title + ".stl"
 
 Mesh.insert(stl_file,assembly)
 FreeCADGui.getDocument(assembly).getObject(title).ShapeColor = (0.10,0.10,0.10)

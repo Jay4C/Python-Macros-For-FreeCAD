@@ -46,7 +46,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_faraday_disc").getObject("Shape"))
 
-stl_file = u"part_faraday_disc.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_faraday_disc.stl"
 
 Mesh.export(__objs__, stl_file)
 

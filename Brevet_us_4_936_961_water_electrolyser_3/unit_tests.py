@@ -6,17 +6,17 @@ import pywinauto.keyboard
 
 
 class brevet_us_4_936_961_water_electrolyser_3(unittest.TestCase):
-    # ok
+    #
     def test_part_ecrou_m5(self):
         print("test_part_ecrou_m5")
 
-        if os.path.exists("part_ecrou_m5.py"):
-            os.remove("part_ecrou_m5.py")
+        if os.path.exists("Scripts\\part_ecrou_m5.py"):
+            os.remove("Scripts\\part_ecrou_m5.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_ecrou_m5.py", "w") as file:
+        with open("Scripts\\part_ecrou_m5.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -62,42 +62,42 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_ecrou_m5").getObject("Shape"))
 
-stl_file = u"part_ecrou_m5.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_ecrou_m5.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_ecrou_m5.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_ecrou_m5.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_part_vis_metal_m5_l60(self):
         print("test_part_vis_metal_m5_l60")
 
-        if os.path.exists("part_vis_metal_m5_l60.py"):
-            os.remove("part_vis_metal_m5_l60.py")
+        if os.path.exists("Scripts\\part_vis_metal_m5_l60.py"):
+            os.remove("Scripts\\part_vis_metal_m5_l60.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_vis_metal_m5_l60.py", "w") as file:
+        with open("Scripts\\part_vis_metal_m5_l60.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -151,42 +151,42 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_vis_metal_m5_l60").getObject("Shape"))
 
-stl_file = u"part_vis_metal_m5_l60.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_vis_metal_m5_l60.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_vis_metal_m5_l60.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_vis_metal_m5_l60.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_part_vis_metal_m5_l20(self):
         print("test_part_vis_metal_m5_l20")
 
-        if os.path.exists("part_vis_metal_m5_l20.py"):
-            os.remove("part_vis_metal_m5_l20.py")
+        if os.path.exists("Scripts\\part_vis_metal_m5_l20.py"):
+            os.remove("Scripts\\part_vis_metal_m5_l20.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_vis_metal_m5_l20.py", "w") as file:
+        with open("Scripts\\part_vis_metal_m5_l20.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -240,7 +240,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_vis_metal_m5_l20").getObject("Shape"))
 
-stl_file = u"part_vis_metal_m5_l20.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_vis_metal_m5_l20.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -249,33 +249,33 @@ setview()
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_vis_metal_m5_l20.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_vis_metal_m5_l20.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_rondelle_m5_d12(self):
         print("test_rondelle_m5_d12")
 
-        if os.path.exists("part_rondelle_m5_d12.py"):
-            os.remove("part_rondelle_m5_d12.py")
+        if os.path.exists("Scripts\\part_rondelle_m5_d12.py"):
+            os.remove("Scripts\\part_rondelle_m5_d12.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_rondelle_m5_d12.py", "w") as file:
+        with open("Scripts\\part_rondelle_m5_d12.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -321,7 +321,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_rondelle_m5_d12").getObject("Shape"))
 
-stl_file = u"part_rondelle_m5_d12.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_rondelle_m5_d12.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -330,35 +330,35 @@ setview()
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_rondelle_m5_d12.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_rondelle_m5_d12.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_part_anode(self):
         print("test_part_anode")
 
         # Dimensions : radius = 2 mm and height = 100 mm
 
-        if os.path.exists("part_anode.py"):
-            os.remove("part_anode.py")
+        if os.path.exists("Scripts\\part_anode.py"):
+            os.remove("Scripts\\part_anode.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_anode.py", "w") as file:
+        with open("Scripts\\part_anode.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -400,7 +400,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_anode").getObject("Shape"))
 
-stl_file = u"part_anode.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_anode.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -409,33 +409,33 @@ setview()
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_anode.py"{)}.read{(}{)}{)}')
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_anode.py"{)}.read{(}{)}{)}')
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_part_cathode(self):
         print("test_part_cathode")
 
         # Dimensions : radius = 4 mm and height = 100 mm
-        if os.path.exists("part_cathode.py"):
-            os.remove("part_cathode.py")
+        if os.path.exists("Scripts\\part_cathode.py"):
+            os.remove("Scripts\\part_cathode.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_cathode.py", "w") as file:
+        with open("Scripts\\part_cathode.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -481,7 +481,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_cathode").getObject("Shape"))
 
-stl_file = u"part_cathode.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_cathode.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -490,32 +490,32 @@ setview()
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_cathode.py"{)}.read{(}{)}{)}')
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_cathode.py"{)}.read{(}{)}{)}')
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_part_spacer(self):
         print("test_part_spacer")
 
-        if os.path.exists("part_spacer.py"):
-            os.remove("part_spacer.py")
+        if os.path.exists("Scripts\\part_spacer.py"):
+            os.remove("Scripts\\part_spacer.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_spacer.py", "w") as file:
+        with open("Scripts\\part_spacer.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, math, Mesh
 
@@ -588,7 +588,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_spacer").getObject("Shape"))
 
-stl_file = u"part_spacer.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_spacer.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -597,33 +597,33 @@ setview()
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_spacer.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_spacer.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_part_bottom_support(self):
         print("test_part_bottom_support")
 
-        if os.path.exists("part_bottom_support.py"):
-            os.remove("part_bottom_support.py")
+        if os.path.exists("Scripts\\part_bottom_support.py"):
+            os.remove("Scripts\\part_bottom_support.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_bottom_support.py", "w") as file:
+        with open("Scripts\\part_bottom_support.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math
 
@@ -698,7 +698,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_bottom_support").getObject("Shape"))
 
-stl_file = u"part_bottom_support.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_bottom_support.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -707,33 +707,33 @@ setview()
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_bottom_support.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_bottom_support.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_part_disc_anode(self):
         print("test_part_disc_anode")
 
-        if os.path.exists("part_disc_anode.py"):
-            os.remove("part_disc_anode.py")
+        if os.path.exists("Scripts\\part_disc_anode.py"):
+            os.remove("Scripts\\part_disc_anode.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_disc_anode.py", "w") as file:
+        with open("Scripts\\part_disc_anode.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math
 
@@ -878,42 +878,42 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_disc_anode").getObject("Shape"))
 
-stl_file = u"part_disc_anode.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_disc_anode.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_disc_anode.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_disc_anode.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_part_disc_cathode(self):
         print("test_part_disc_cathode")
 
-        if os.path.exists("part_disc_cathode.py"):
-            os.remove("part_disc_cathode.py")
+        if os.path.exists("Scripts\\part_disc_cathode.py"):
+            os.remove("Scripts\\part_disc_cathode.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_disc_cathode.py", "w") as file:
+        with open("Scripts\\part_disc_cathode.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math
 
@@ -1038,7 +1038,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_disc_cathode").getObject("Shape"))
 
-stl_file = u"part_disc_cathode.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_disc_cathode.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -1047,16 +1047,16 @@ setview()
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_disc_cathode.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\part_disc_cathode.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1067,13 +1067,13 @@ setview()
     def test_assembly_complete_electrolyser(self):
         print("test_assembly_complete_electrolyser")
 
-        if os.path.exists("assembly_complete_electrolyser.py"):
-            os.remove("assembly_complete_electrolyser.py")
+        if os.path.exists("Scripts\\assembly_complete_electrolyser.py"):
+            os.remove("Scripts\\assembly_complete_electrolyser.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("assembly_complete_electrolyser.py", "w") as file:
+        with open("Scripts\\assembly_complete_electrolyser.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -1149,7 +1149,7 @@ DOC.recompute()
 FreeCADGui.getDocument("assembly_complete_electrolyser").getObject("Shape").ShapeColor = (0.67,0.00,0.00)
 
 # insertion part_vis_metal_m5_l20 - 1
-Mesh.insert(u"part_vis_metal_m5_l20.stl", "assembly_complete_electrolyser")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_936_961_water_electrolyser_3/Stl/part_vis_metal_m5_l20.stl", "assembly_complete_electrolyser")
 FreeCAD.getDocument("assembly_complete_electrolyser").getObject("part_vis_metal_m5_l20").Placement = App.Placement(App.Vector(84, 0, 0), App.Rotation(App.Vector(1,0,0), 0))
 FreeCADGui.getDocument("assembly_complete_electrolyser").getObject("part_vis_metal_m5_l20").ShapeColor = (0.33,1.00,1.00)
 
@@ -1163,20 +1163,20 @@ Mesh.export(__objs__,u"assembly_complete_electrolyser.stl")
 del __objs__
 
 setview()
-         """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"assembly_complete_electrolyser.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_936_961_water_electrolyser_3\\\\Scripts\\\\assembly_complete_electrolyser.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)

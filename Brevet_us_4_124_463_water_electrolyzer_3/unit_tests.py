@@ -11,13 +11,13 @@ class brevet_us_4_124_463_water_electrolyser_3_for_poc_and_industrial(unittest.T
     def test_part_ecrou_10m(self):
         print("test_part_ecrou_10m")
 
-        if os.path.exists("part_ecrou_10m.py"):
-            os.remove("part_ecrou_10m.py")
+        if os.path.exists("Scripts\\part_ecrou_10m.py"):
+            os.remove("Scripts\\part_ecrou_10m.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_ecrou_10m.py", "w") as file:
+        with open("Scripts\\part_ecrou_10m.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -63,14 +63,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_ecrou_10m").getObject("Shape"))
 
-stl_file = u"part_ecrou_10m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_ecrou_10m_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_ecrou_10m_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -130,20 +130,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_ecrou_10m.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_ecrou_10m.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -155,13 +155,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_vis_metal_m10_200l(self):
         print("test_part_vis_metal_m10_200l")
 
-        if os.path.exists("part_vis_metal_m10_200l.py"):
-            os.remove("part_vis_metal_m10_200l.py")
+        if os.path.exists("Scripts\\part_vis_metal_m10_200l.py"):
+            os.remove("Scripts\\part_vis_metal_m10_200l.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_vis_metal_m10_200l.py", "w") as file:
+        with open("Scripts\\part_vis_metal_m10_200l.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -220,14 +220,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_vis_metal_m10_200l").getObject("Shape"))
 
-stl_file = u"part_vis_metal_m10_200l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_200l.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_vis_metal_m10_200l_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_vis_metal_m10_200l_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -287,20 +287,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_vis_metal_m10_200l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_vis_metal_m10_200l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -312,13 +312,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_vis_metal_m10_150l(self):
         print("test_part_vis_metal_m10_150l")
 
-        if os.path.exists("part_vis_metal_m10_150l.py"):
-            os.remove("part_vis_metal_m10_150l.py")
+        if os.path.exists("Scripts\\part_vis_metal_m10_150l.py"):
+            os.remove("Scripts\\part_vis_metal_m10_150l.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_vis_metal_m10_150l.py", "w") as file:
+        with open("Scripts\\part_vis_metal_m10_150l.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -377,14 +377,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_vis_metal_m10_150l").getObject("Shape"))
 
-stl_file = u"part_vis_metal_m10_150l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_150l.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_vis_metal_m10_150l_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_vis_metal_m10_150l_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -444,20 +444,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_vis_metal_m10_150l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_vis_metal_m10_150l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -469,13 +469,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_vis_metal_m10_30l(self):
         print("test_part_vis_metal_m10_30l")
 
-        if os.path.exists("part_vis_metal_m10_30l.py"):
-            os.remove("part_vis_metal_m10_30l.py")
+        if os.path.exists("Scripts\\part_vis_metal_m10_30l.py"):
+            os.remove("Scripts\\part_vis_metal_m10_30l.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_vis_metal_m10_30l.py", "w") as file:
+        with open("Scripts\\part_vis_metal_m10_30l.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -534,14 +534,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_vis_metal_m10_30l").getObject("Shape"))
 
-stl_file = u"part_vis_metal_m10_30l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_30l.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_vis_metal_m10_30l_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_vis_metal_m10_30l_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -601,20 +601,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_vis_metal_m10_30l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_vis_metal_m10_30l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -622,16 +622,17 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         pywinauto.keyboard.send_keys('{ENTER}')
 
     # ok
+    #
     def test_part_rondelle_10m(self):
         print("test_part_rondelle_10m")
 
-        if os.path.exists("part_rondelle_10m.py"):
-            os.remove("part_rondelle_10m.py")
+        if os.path.exists("Scripts\\part_rondelle_10m.py"):
+            os.remove("Scripts\\part_rondelle_10m.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_rondelle_10m.py", "w") as file:
+        with open("Scripts\\part_rondelle_10m.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh
 
@@ -677,14 +678,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_rondelle_10m").getObject("Shape"))
 
-stl_file = u"part_rondelle_10m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_rondelle_10m_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_rondelle_10m_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -744,20 +745,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_rondelle_10m.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_rondelle_10m.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -768,13 +769,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_tank_d20_170l(self):
         print("test_part_tank_d20_170l")
 
-        if os.path.exists("part_tank_d20_170l.py"):
-            os.remove("part_tank_d20_170l.py")
+        if os.path.exists("Scripts\\part_tank_d20_170l.py"):
+            os.remove("Scripts\\part_tank_d20_170l.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_tank_d20_170l.py", "w") as file:
+        with open("Scripts\\part_tank_d20_170l.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math
 
@@ -824,14 +825,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_tank_d20_170l").getObject("Shape"))
 
-stl_file = u"part_tank_d20_170l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_tank_d20_170l.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_tank_d20_170l_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_tank_d20_170l_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -891,20 +892,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_tank_d20_170l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_tank_d20_170l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -915,13 +916,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_bottom_support_250d(self):
         print("test_part_bottom_support_250d")
 
-        if os.path.exists("part_bottom_support_250d.py"):
-            os.remove("part_bottom_support_250d.py")
+        if os.path.exists("Scripts\\part_bottom_support_250d.py"):
+            os.remove("Scripts\\part_bottom_support_250d.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_bottom_support_250d.py", "w") as file:
+        with open("Scripts\\part_bottom_support_250d.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math, importDXF
 
@@ -1008,18 +1009,18 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_bottom_support_250d").getObject("Shape"))
 
-stl_file = u"part_bottom_support_250d.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_bottom_support_250d.stl"
 
 Mesh.export(__objs__, stl_file)
 
-dxf_file = u"part_bottom_support_250d.dxf"
+dxf_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_bottom_support_250d.dxf"
 
 importDXF.export(__objs__, dxf_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_bottom_support_250d_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_bottom_support_250d_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1079,20 +1080,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_bottom_support_250d.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_bottom_support_250d.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1103,13 +1104,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_bottom_support_250d_laser_cutting(self):
         print("test_part_bottom_support_250d_laser_cutting")
 
-        if os.path.exists("part_bottom_support_250d_laser_cutting.py"):
-            os.remove("part_bottom_support_250d_laser_cutting.py")
+        if os.path.exists("Scripts\\part_bottom_support_250d_laser_cutting.py"):
+            os.remove("Scripts\\part_bottom_support_250d_laser_cutting.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_bottom_support_250d_laser_cutting.py", "w") as file:
+        with open("Scripts\\part_bottom_support_250d_laser_cutting.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math, importDXF
 
@@ -1184,18 +1185,18 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_bottom_support_250d_laser_cutting").getObject("Shape"))
 
-stl_file = u"part_bottom_support_250d_laser_cutting.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_bottom_support_250d_laser_cutting.stl"
 
 Mesh.export(__objs__, stl_file)
 
-dxf_file = u"part_bottom_support_250d_laser_cutting.dxf"
+dxf_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_bottom_support_250d_laser_cutting.dxf"
 
 importDXF.export(__objs__, dxf_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_bottom_support_250d_laser_cutting_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_bottom_support_250d_laser_cutting_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1255,20 +1256,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_bottom_support_250d_laser_cutting.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_bottom_support_250d_laser_cutting.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1279,13 +1280,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_top_support_250d(self):
         print("test_part_top_support_250d")
 
-        if os.path.exists("part_top_support_250d.py"):
-            os.remove("part_top_support_250d.py")
+        if os.path.exists("Scripts\\part_top_support_250d.py"):
+            os.remove("Scripts\\part_top_support_250d.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_top_support_250d.py", "w") as file:
+        with open("Scripts\\part_top_support_250d.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math
 
@@ -1382,14 +1383,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_top_support_250d").getObject("Shape"))
 
-stl_file = u"part_top_support_250d.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_top_support_250d.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_top_support_250d_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_top_support_250d_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1449,20 +1450,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_top_support_250d.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_top_support_250d.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1473,13 +1474,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_top_support_250d_v1(self):
         print("test_part_top_support_250d_v1")
 
-        if os.path.exists("part_top_support_250d_v1.py"):
-            os.remove("part_top_support_250d_v1.py")
+        if os.path.exists("Scripts\\part_top_support_250d_v1.py"):
+            os.remove("Scripts\\part_top_support_250d_v1.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_top_support_250d_v1.py", "w") as file:
+        with open("Scripts\\part_top_support_250d_v1.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math, importDXF
 
@@ -1566,18 +1567,18 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_top_support_250d_v1").getObject("Shape"))
 
-stl_file = u"part_top_support_250d_v1.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_top_support_250d_v1.stl"
 
 Mesh.export(__objs__, stl_file)
 
-dxf_file = u"part_top_support_250d_v1.dxf"
+dxf_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_top_support_250d_v1.dxf"
 
 importDXF.export(__objs__, dxf_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_top_support_250d_v1_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_top_support_250d_v1_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1637,20 +1638,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_top_support_250d_v1.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_top_support_250d_v1.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1661,13 +1662,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_top_support_250d_laser_cutting(self):
         print("test_part_top_support_250d_laser_cutting")
 
-        if os.path.exists("part_top_support_250d_laser_cutting.py"):
-            os.remove("part_top_support_250d_laser_cutting.py")
+        if os.path.exists("Scripts\\part_top_support_250d_laser_cutting.py"):
+            os.remove("Scripts\\part_top_support_250d_laser_cutting.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_top_support_250d_laser_cutting.py", "w") as file:
+        with open("Scripts\\part_top_support_250d_laser_cutting.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math, importDXF
 
@@ -1742,18 +1743,18 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_top_support_250d_laser_cutting").getObject("Shape"))
 
-stl_file = u"part_top_support_250d_laser_cutting.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_top_support_250d_laser_cutting.stl"
 
 Mesh.export(__objs__, stl_file)
 
-dxf_file = u"part_top_support_250d_laser_cutting.dxf"
+dxf_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_top_support_250d_laser_cutting.dxf"
 
 importDXF.export(__objs__, dxf_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_top_support_250d_laser_cutting_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_top_support_250d_laser_cutting_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1813,20 +1814,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_top_support_250d_laser_cutting.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_top_support_250d_laser_cutting.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1837,13 +1838,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_capacitor_plate(self):
         print("test_part_capacitor_plate")
 
-        if os.path.exists("part_capacitor_plate.py"):
-            os.remove("part_capacitor_plate.py")
+        if os.path.exists("Scripts\\part_capacitor_plate.py"):
+            os.remove("Scripts\\part_capacitor_plate.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_capacitor_plate.py", "w") as file:
+        with open("Scripts\\part_capacitor_plate.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, math, Mesh, ImportGui, importDXF
 
@@ -1946,15 +1947,15 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_capacitor_plate").getObject("Shape"))
 
-step_file = u"part_capacitor_plate.step"
+step_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.step"
 
 ImportGui.export(__objs__, step_file)
 
-stl_file = u"part_capacitor_plate.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.stl"
 
 Mesh.export(__objs__, stl_file)
 
-dxf_file = u"part_capacitor_plate.dxf"
+dxf_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.dxf"
 
 importDXF.export(__objs__, dxf_file)
 
@@ -1963,7 +1964,7 @@ del __objs__
 setview()
 
 # Generate PNG files
-file = 'part_capacitor_plate_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_capacitor_plate_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -2023,20 +2024,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_capacitor_plate.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_capacitor_plate.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -2047,13 +2048,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_part_capteur_de_volume(self):
         print("test_part_capteur_de_volume")
 
-        if os.path.exists("part_capteur_de_volume.py"):
-            os.remove("part_capteur_de_volume.py")
+        if os.path.exists("Scripts\\part_capteur_de_volume.py"):
+            os.remove("Scripts\\part_capteur_de_volume.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_capteur_de_volume.py", "w") as file:
+        with open("Scripts\\part_capteur_de_volume.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, math, Mesh, ImportGui
 
@@ -2109,11 +2110,11 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_capteur_de_volume").getObject("Shape"))
 
-step_file = u"part_capteur_de_volume.step"
+step_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capteur_de_volume.step"
 
 ImportGui.export(__objs__, step_file)
 
-stl_file = u"part_capteur_de_volume.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capteur_de_volume.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -2122,7 +2123,7 @@ del __objs__
 setview()
 
 # Generate PNG files
-file = 'part_capteur_de_volume_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_capteur_de_volume_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -2182,38 +2183,38 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_capteur_de_volume.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_capteur_de_volume.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    #
+    # ok
     # https://www.leroymerlin.fr/produits/quincaillerie/quincaillerie-du-meuble/equerre-et-assemblage-du-meuble/equerre-assemblage/1-equerre-assemblage-poli-hettich-l-50-mm-70207613.html
     def test_part_equerre_assemblage_50L_15l(self):
         print("test_part_equerre_assemblage_50L_15l")
 
-        if os.path.exists("part_equerre_assemblage_50L_15l.py"):
-            os.remove("part_equerre_assemblage_50L_15l.py")
+        if os.path.exists("Scripts\\part_equerre_assemblage_50L_15l.py"):
+            os.remove("Scripts\\part_equerre_assemblage_50L_15l.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_equerre_assemblage_50L_15l.py", "w") as file:
+        with open("Scripts\\part_equerre_assemblage_50L_15l.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, math, Mesh
 
@@ -2269,14 +2270,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_equerre_assemblage_50L_15l").getObject("Shape"))
 
-stl_file = u"part_equerre_assemblage_50L_15l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_equerre_assemblage_50L_15l.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'part_equerre_assemblage_50L_15l_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\part_equerre_assemblage_50L_15l_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -2340,16 +2341,16 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_equerre_assemblage_50L_15l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\part_equerre_assemblage_50L_15l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -2360,13 +2361,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_light_assembly(self):
         print("test_light_assembly")
 
-        if os.path.exists("light_assembly.py"):
-            os.remove("light_assembly.py")
+        if os.path.exists("Scripts\\light_assembly.py"):
+            os.remove("Scripts\\light_assembly.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("light_assembly.py", "w") as file:
+        with open("Scripts\\light_assembly.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math
 
@@ -2456,7 +2457,7 @@ degre = 60
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -2)
-Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_rondelle_10m").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_rondelle_10m").ShapeColor = (1.00,1.00,0.00)
 
@@ -2467,14 +2468,14 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -2)
-    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_rondelle_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_rondelle_10m00" + str(i1)).ShapeColor = (1.00,1.00,0.00)
     i1 += 1
 
 # For placing the part_rondelle_10m
 for i in range(6, 8):
-    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "light_assembly")
 
 for i in range(6, 8):
     alpha=(i*180*math.pi)/180
@@ -2490,7 +2491,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 6)
-    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "light_assembly")
 
     if i1 < 10:
         FreeCAD.getDocument("light_assembly").getObject("part_rondelle_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
@@ -2503,7 +2504,7 @@ for degre in degres:
 
 # For placing the part_rondelle_10m
 for i in range(14, 16):
-    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "light_assembly")
 
 for i in range(14, 16):
     alpha=(i*180*math.pi)/180
@@ -2518,7 +2519,7 @@ k = 6.40
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-Mesh.insert(u"part_vis_metal_m10_200l.stl", "light_assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_200l.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_vis_metal_m10_200l").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_vis_metal_m10_200l").ShapeColor = (0.00,1.00,1.00)
 
@@ -2530,7 +2531,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-    Mesh.insert(u"part_vis_metal_m10_200l.stl", "light_assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_200l.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_vis_metal_m10_200l00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_vis_metal_m10_200l00" + str(i1)).ShapeColor = (0.00,1.00,1.00)
     i1 += 1
@@ -2541,7 +2542,7 @@ k = 6.40
 radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-Mesh.insert(u"part_vis_metal_m10_150l.stl", "light_assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_150l.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_vis_metal_m10_150l").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_vis_metal_m10_150l").ShapeColor = (0.00,1.00,1.00)
 
@@ -2553,7 +2554,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-    Mesh.insert(u"part_vis_metal_m10_150l.stl", "light_assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_150l.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_vis_metal_m10_150l00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_vis_metal_m10_150l00" + str(i1)).ShapeColor = (0.00,1.00,1.00)
     i1 += 1
@@ -2563,7 +2564,7 @@ degre = 60
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-Mesh.insert(u"part_ecrou_10m.stl", "light_assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_ecrou_10m").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_ecrou_10m").ShapeColor = (0.00,0.00,1.00)
 
@@ -2574,7 +2575,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-    Mesh.insert(u"part_ecrou_10m.stl", "light_assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_ecrou_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_ecrou_10m00" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     i1 += 1
@@ -2584,7 +2585,7 @@ degre = 180
 radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-Mesh.insert(u"part_ecrou_10m.stl", "light_assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_ecrou_10m006").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("light_assembly").getObject("part_ecrou_10m006").ShapeColor = (0.00,0.00,1.00)
 
@@ -2595,14 +2596,14 @@ for degre in degres:
     radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-    Mesh.insert(u"part_ecrou_10m.stl", "light_assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "light_assembly")
     FreeCAD.getDocument("light_assembly").getObject("part_ecrou_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("light_assembly").getObject("part_ecrou_10m00" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     i1 += 1
 
 # For placing the part_rondelle_10m
 for i in range(16, 18):
-    Mesh.insert(u"part_rondelle_10m.stl", "light_assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "light_assembly")
 
 for i in range(16, 18):
     alpha=(i*180*math.pi)/180
@@ -2613,14 +2614,14 @@ for i in range(16, 18):
 
 # insertion part_capacitor_plate - 0
 vector = App.Vector(0, 0, 20)
-Mesh.insert(u"part_capacitor_plate.stl", "light_assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.stl", "light_assembly")
 FreeCAD.getDocument("light_assembly").getObject("part_capacitor_plate").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 90))
 FreeCADGui.getDocument("light_assembly").getObject("part_capacitor_plate").ShapeColor = (0.00,0.50,0.50)
 
 setview()
 
 # Generate PNG files
-file = 'light_assembly_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\light_assembly_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -2680,20 +2681,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"light_assembly.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\light_assembly.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -2704,13 +2705,13 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
     def test_assembly(self):
         print("test_assembly")
 
-        if os.path.exists("assembly.py"):
-            os.remove("assembly.py")
+        if os.path.exists("Scripts\\assembly.py"):
+            os.remove("Scripts\\assembly.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("assembly.py", "w") as file:
+        with open("Scripts\\assembly.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Mesh, math
 
@@ -2800,7 +2801,7 @@ degre = 60
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -2)
-Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_rondelle_10m").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("assembly").getObject("part_rondelle_10m").ShapeColor = (1.00,1.00,0.00)
 
@@ -2811,14 +2812,14 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), -2)
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_rondelle_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("assembly").getObject("part_rondelle_10m00" + str(i1)).ShapeColor = (1.00,1.00,0.00)
     i1 += 1
 
 # For placing the part_rondelle_10m
 for i in range(6, 8):
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
 
 for i in range(6, 8):
     alpha=(i*180*math.pi)/180
@@ -2834,7 +2835,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 6)
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
     
     if i1 < 10:
         FreeCAD.getDocument("assembly").getObject("part_rondelle_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
@@ -2847,7 +2848,7 @@ for degre in degres:
 
 # For placing the part_rondelle_10m
 for i in range(14, 16):
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
 
 for i in range(14, 16):
     alpha=(i*180*math.pi)/180
@@ -2862,7 +2863,7 @@ k = 6.40
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-Mesh.insert(u"part_vis_metal_m10_200l.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_200l.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_vis_metal_m10_200l").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("assembly").getObject("part_vis_metal_m10_200l").ShapeColor = (0.00,1.00,1.00)
 
@@ -2874,7 +2875,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-    Mesh.insert(u"part_vis_metal_m10_200l.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_200l.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_vis_metal_m10_200l00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("assembly").getObject("part_vis_metal_m10_200l00" + str(i1)).ShapeColor = (0.00,1.00,1.00)
     i1 += 1
@@ -2885,7 +2886,7 @@ k = 6.40
 radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-Mesh.insert(u"part_vis_metal_m10_150l.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_150l.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_vis_metal_m10_150l").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("assembly").getObject("part_vis_metal_m10_150l").ShapeColor = (0.00,1.00,1.00)
 
@@ -2897,7 +2898,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2 - k)
-    Mesh.insert(u"part_vis_metal_m10_150l.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_150l.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_vis_metal_m10_150l00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("assembly").getObject("part_vis_metal_m10_150l00" + str(i1)).ShapeColor = (0.00,1.00,1.00)
     i1 += 1
@@ -2907,7 +2908,7 @@ degre = 60
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-Mesh.insert(u"part_ecrou_10m.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_ecrou_10m").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m").ShapeColor = (0.00,0.00,1.00)
 
@@ -2918,7 +2919,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-    Mesh.insert(u"part_ecrou_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_ecrou_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m00" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     i1 += 1
@@ -2928,7 +2929,7 @@ degre = 180
 radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-Mesh.insert(u"part_ecrou_10m.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_ecrou_10m006").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m006").ShapeColor = (0.00,0.00,1.00)
 
@@ -2939,14 +2940,14 @@ for degre in degres:
     radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-    Mesh.insert(u"part_ecrou_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_ecrou_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m00" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     i1 += 1
 
 # For placing the part_rondelle_10m
 for i in range(16, 18):
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
 
 for i in range(16, 18):
     alpha=(i*180*math.pi)/180
@@ -2957,13 +2958,13 @@ for i in range(16, 18):
 
 # insertion part_capacitor_plate - 0
 vector = App.Vector(0, 0, 20)
-Mesh.insert(u"part_capacitor_plate.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_capacitor_plate").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 90))
 FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate").ShapeColor = (0.00,0.50,0.50)
 
 # For placing the part_rondelle_10m
 for i in range(18, 20):
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
 
 for i in range(18, 20):
     alpha=(i*180*math.pi)/180
@@ -2974,7 +2975,7 @@ for i in range(18, 20):
 
 # insertion part_capacitor_plate - 1
 vector = App.Vector(0, 0, 23)
-Mesh.insert(u"part_capacitor_plate.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_capacitor_plate001").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 270))
 FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate001").ShapeColor = (0.00,0.50,0.50)
 
@@ -2982,12 +2983,12 @@ FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate001").ShapeCol
 for i in range(2, 10):
     if i % 2 == 0:
         vector = App.Vector(0, 0, i*3 + 20)
-        Mesh.insert(u"part_capacitor_plate.stl", "assembly")
+        Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.stl", "assembly")
         FreeCAD.getDocument("assembly").getObject("part_capacitor_plate00" + str(i)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 90))
         FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate00" + str(i)).ShapeColor = (0.00,0.50,0.50)
     else:
         vector = App.Vector(0, 0, i*3 + 20)
-        Mesh.insert(u"part_capacitor_plate.stl", "assembly")
+        Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.stl", "assembly")
         FreeCAD.getDocument("assembly").getObject("part_capacitor_plate00" + str(i)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 270))
         FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate00" + str(i)).ShapeColor = (0.00,0.50,0.50)
 
@@ -2995,39 +2996,39 @@ for i in range(2, 10):
 for i in range(10, 37):
     if i % 2 == 0:
         vector = App.Vector(0, 0, i*3 + 20)
-        Mesh.insert(u"part_capacitor_plate.stl", "assembly")
+        Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.stl", "assembly")
         FreeCAD.getDocument("assembly").getObject("part_capacitor_plate0" + str(i)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 90))
         FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate0" + str(i)).ShapeColor = (0.00,0.50,0.50)
     else:
         vector = App.Vector(0, 0, i*3 + 20)
-        Mesh.insert(u"part_capacitor_plate.stl", "assembly")
+        Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capacitor_plate.stl", "assembly")
         FreeCAD.getDocument("assembly").getObject("part_capacitor_plate0" + str(i)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 270))
         FreeCADGui.getDocument("assembly").getObject("part_capacitor_plate0" + str(i)).ShapeColor = (0.00,0.50,0.50)
 
 # For placing the part_tank_d20_170l
 vector = App.Vector(0, 0, 3)
-Mesh.insert(u"part_tank_d20_170l.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_tank_d20_170l.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_tank_d20_170l").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("assembly").getObject("part_tank_d20_170l").ShapeColor = (0.20,0.20,0.20)
 FreeCADGui.getDocument("assembly").getObject("part_tank_d20_170l").Transparency = 40
 
 # For placing the part_top_support_250d
 # vector = App.Vector(0, 0, 176)
-# Mesh.insert(u"part_top_support_250d.stl", "assembly")
+# Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_top_support_250d.stl", "assembly")
 # FreeCAD.getDocument("assembly").getObject("part_top_support_250d").Placement = App.Placement(vector, App.Rotation(App.Vector(1,0,0), 180))
 # FreeCADGui.getDocument("assembly").getObject("part_top_support_250d").ShapeColor = (0.00,1.00,0.00)
 # FreeCADGui.getDocument("assembly").getObject("part_top_support_250d").Transparency = 80
 
 # For placing the part_top_support_250d_v1
 vector = App.Vector(0, 0, 176)
-Mesh.insert(u"part_top_support_250d_v1.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_top_support_250d_v1.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_top_support_250d_v1").Placement = App.Placement(vector, App.Rotation(App.Vector(1,0,0), 180))
 FreeCADGui.getDocument("assembly").getObject("part_top_support_250d_v1").ShapeColor = (0.00,1.00,0.00)
 FreeCADGui.getDocument("assembly").getObject("part_top_support_250d_v1").Transparency = 80
 
 # For placing the part_rondelle_10m
 for i in range(20, 56):
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
 
 for i in range(20, 56):
     alpha=(180*math.pi)/180
@@ -3038,7 +3039,7 @@ for i in range(20, 56):
 
 # For placing the part_rondelle_10m
 for i in range(56, 62):
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
     alpha=(i*60*math.pi)/180
     radius = diametre_maximal/2 - 7.5 - 5
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 176)
@@ -3047,7 +3048,7 @@ for i in range(56, 62):
 
 # For placing the part_rondelle_10m
 for i in range(62, 68):
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
     alpha=(i*60*math.pi)/180
     radius = diametre_maximal/2 - 7.5 - 5
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 176 - 8)
@@ -3062,14 +3063,14 @@ for degre in degres:
         radius = diametre_maximal/2 - 7.5 - 5
         alpha=(degre*math.pi)/180
         vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 176 + 2)
-        Mesh.insert(u"part_ecrou_10m.stl", "assembly")
+        Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "assembly")
         FreeCAD.getDocument("assembly").getObject("part_ecrou_10m00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
         FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m00" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     else:
         radius = diametre_maximal/2 - 7.5 - 5
         alpha=(degre*math.pi)/180
         vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 176 + 2)
-        Mesh.insert(u"part_ecrou_10m.stl", "assembly")
+        Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "assembly")
         FreeCAD.getDocument("assembly").getObject("part_ecrou_10m0" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
         FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m0" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     
@@ -3082,7 +3083,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 56*3 - 36)
-    Mesh.insert(u"part_ecrou_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_ecrou_10m0" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m0" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     i1 += 1
@@ -3090,14 +3091,14 @@ for degre in degres:
 # For placing the part_rondelle_10m0
 for i in range(68, 104):
     if i < 100:
-        Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+        Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
         alpha=(360*math.pi)/180
         radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
         vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), i*3 - 180)
         FreeCAD.getDocument("assembly").getObject("part_rondelle_10m0" + str(i)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
         FreeCADGui.getDocument("assembly").getObject("part_rondelle_10m0" + str(i)).ShapeColor = (1.00,1.00,0.00)
     else:
-        Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+        Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
         alpha=(360*math.pi)/180
         radius = diametre_maximal/2 - 25 - 3 - 5 - 5 - 5
         vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), i*3 - 180)
@@ -3111,7 +3112,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 176 - 6 - 2 - 10)
-    Mesh.insert(u"part_ecrou_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_ecrou_10m0" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m0" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     i1 += 1
@@ -3122,7 +3123,7 @@ k = 6.40
 radius = diametre_maximal/2 - 7.5 - 5
 alpha=(degre*math.pi)/180
 vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 6 - k)
-Mesh.insert(u"part_vis_metal_m10_30l.stl", "assembly")
+Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_30l.stl", "assembly")
 FreeCAD.getDocument("assembly").getObject("part_vis_metal_m10_30l").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 FreeCADGui.getDocument("assembly").getObject("part_vis_metal_m10_30l").ShapeColor = (0.00,1.00,1.00)
 
@@ -3134,7 +3135,7 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 6 - k)
-    Mesh.insert(u"part_vis_metal_m10_30l.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_vis_metal_m10_30l.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_vis_metal_m10_30l00" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("assembly").getObject("part_vis_metal_m10_30l00" + str(i1)).ShapeColor = (0.00,1.00,1.00)
     i1 += 1
@@ -3144,7 +3145,7 @@ degres = [90, 210, 330]
 i = 104
 for degre in degres:
     k = 6.40
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
     alpha=(degre*math.pi)/180
     radius = diametre_maximal/2 - 7.5 - 5
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 2)
@@ -3157,7 +3158,7 @@ degres = [90, 210, 330]
 i = 107
 for degre in degres:
     k = 6.40
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
     alpha=(degre*math.pi)/180
     radius = diametre_maximal/2 - 7.5 - 5
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), - 6)
@@ -3170,7 +3171,7 @@ degres = [90, 210, 330]
 i = 110
 for degre in degres:
     k = 6.40
-    Mesh.insert(u"part_rondelle_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_rondelle_10m.stl", "assembly")
     alpha=(degre*math.pi)/180
     radius = diametre_maximal/2 - 7.5 - 5
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 6)
@@ -3185,13 +3186,13 @@ for degre in degres:
     radius = diametre_maximal/2 - 7.5 - 5
     alpha=(degre*math.pi)/180
     vector = App.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 8)
-    Mesh.insert(u"part_ecrou_10m.stl", "assembly")
+    Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_ecrou_10m.stl", "assembly")
     FreeCAD.getDocument("assembly").getObject("part_ecrou_10m0" + str(i1)).Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
     FreeCADGui.getDocument("assembly").getObject("part_ecrou_10m0" + str(i1)).ShapeColor = (0.00,0.00,1.00)
     i1 += 1
 
 # For placing capteur de volume
-# Mesh.insert(u"part_capteur_de_volume.stl", "assembly")
+# Mesh.insert(u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/part_capteur_de_volume.stl", "assembly")
 # vector = App.Vector(0, 0, 73)
 # FreeCAD.getDocument("assembly").getObject("part_capteur_de_volume").Placement = App.Placement(vector, App.Rotation(App.Vector(0,0,1), 0))
 # FreeCADGui.getDocument("assembly").getObject("part_capteur_de_volume").ShapeColor = (0.00,0.00,1.00)
@@ -3389,14 +3390,14 @@ __objs__.append(FreeCAD.getDocument("assembly").getObject("part_rondelle_10m059"
 __objs__.append(FreeCAD.getDocument("assembly").getObject("part_rondelle_10m095"))
 __objs__.append(FreeCAD.getDocument("assembly").getObject("part_rondelle_10m105"))
 
-stl_file = u"assembly_water_electrolyzer.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Brevet_us_4_124_463_water_electrolyzer_3/Stl/assembly_water_electrolyzer.stl"
 
 Mesh.export(__objs__, stl_file)
 
 del __objs__
 
 # Generate PNG files
-file = 'assembly_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Png\\\\assembly_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -3456,20 +3457,20 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 i += 1
 Gui.activeDocument().activeView().viewLeft()
 Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
-        """)
+""")
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(460, 750))
+        pywinauto.mouse.click(button="left", coords=(round(670 * 1.5), round(695 * 1.5)))
 
         time.sleep(3)
 
-        pywinauto.mouse.click(button="left", coords=(70, 670))
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"assembly.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Brevet_us_4_124_463_water_electrolyzer_3\\\\Scripts\\\\assembly.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)

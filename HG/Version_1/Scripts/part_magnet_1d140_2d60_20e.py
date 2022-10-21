@@ -46,7 +46,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_magnet_1d140_2d60_20e").getObject("Shape"))
 
-stl_file = u"part_magnet_1d140_2d60_20e.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_magnet_1d140_2d60_20e.stl"
 
 Mesh.export(__objs__, stl_file)
 

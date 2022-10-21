@@ -71,7 +71,7 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_palier").getObject("Shape"))
 
-stl_file = u"part_palier.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_palier.stl"
 
 Mesh.export(__objs__, stl_file)
 
