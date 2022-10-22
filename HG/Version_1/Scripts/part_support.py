@@ -28,66 +28,99 @@ else:
 EPS = 0.10
 EPS_C = EPS * -0.5
 
-d1 = 50
-d2 = 6.1
-e1 = d1 + 2*2 + 2*2 + 2*2 + 2*11.05 + 2*2
-e2 = d1 + 2*2
-e3 = e1
-e4 = e2 + 2*2
-e5 = d1 + 2*2 + 2*2 + 2*2 + 2*(11.05/2)
-e6 = d1 - 2*2 - 2*(11.05/2)
-e7 = 16.1
-h1 = 20
-h2 = h1 - 2
+# tube diameter
+d_tube = 140 + 10*2 + 5*2
+
+# nut diameter
+d_nut = 24
+
+# main diameter
+d1 = d_tube + 5*2 + 2*2 + d_nut*2 + 2*2
+
+# maximum length
+h1 = (700 - 170)/2
+
+# hole length
+h2 = h1 - 5
+
+# inner diamter for fixing the tube
+d_inner_tube = d_tube
+
+# radius for fixing the device
+r_f_d = (d_tube + 5*2 + 2*2 + d_nut)/2
+
+# screw diameter
+d_vis = 12.1
+
+d3 = d1
+
+d4 = d_tube + 5*2
+
+d_arbre = 20.1
+
+# part_palier_4_fixations dimensions
+r_f_p = math.sqrt(math.pow(32, 2) + math.pow(32, 2))
+
+d_mamelon = 16
+
+d_vis_palier = 8.1
 
 # Cylinder_1
-cylinder_1 = Part.makeCylinder(e1/2, h1)
+cylinder_1 = Part.makeCylinder(d1/2, h1)
 
 # Cut cylinder_1 by cylinder_2
-cylinder_2 = Part.makeCylinder(e2/2, h2)
+cylinder_2 = Part.makeCylinder(d_inner_tube/2, h2)
 cylinder_1 = cylinder_1.cut(cylinder_2)
-
-# Cylinder_3
-cylinder_3 = Part.makeCylinder(e3/2, h2)
-
-# Cut cylinder_3 by cylinder_4
-cylinder_4 = Part.makeCylinder(e4/2, h2)
-cylinder_3 = cylinder_3.cut(cylinder_4)
-
-# Cut cylinder_1 by cylinder_3
-cylinder_3_vector = FreeCAD.Vector(0, 0, 2)
-cylinder_3.translate(cylinder_3_vector)
-cylinder_1 = cylinder_1.cut(cylinder_3)
 
 # holes for fixing the device
 degre = 15
 for i in range(int(360/degre)):
-    radius = e5/2
+    radius = r_f_d
     alpha=(i*degre*math.pi)/180
     hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
-    hole = Part.makeCylinder(d2/2, h1)
+    hole = Part.makeCylinder(d_vis/2, h1)
     hole.translate(hole_vector)
     cylinder_1 = cylinder_1.cut(hole)
 
-# holes for fixing the electrodes
-degre = 60
-for i in range(int(360/degre)):
-    radius = e6/2
-    alpha=(i*degre*math.pi)/180
-    hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
-    hole = Part.makeCylinder(d2/2, h1)
-    hole.translate(hole_vector)
-    cylinder_1 = cylinder_1.cut(hole)
+# Cylinder_3
+cylinder_3 = Part.makeCylinder(d3/2, h2)
+
+# Cut cylinder_3 by cylinder_4
+cylinder_4 = Part.makeCylinder(d4/2, h2)
+cylinder_3 = cylinder_3.cut(cylinder_4)
+
+# Cut cylinder_1 by cylinder_3
+cylinder_3_vector = FreeCAD.Vector(0, 0, 5)
+cylinder_3.translate(cylinder_3_vector)
+cylinder_1 = cylinder_1.cut(cylinder_3)
 
 # Cut cylinder_1 by cylinder_5
-cylinder_5 = Part.makeCylinder(e7/2, h1)
+cylinder_5 = Part.makeCylinder(d_arbre/2, h1)
 cylinder_1 = cylinder_1.cut(cylinder_5)
+
+# cut cylinder_1 by trou_vis for fixing the part_palier_4_fixations
+for degre in [45, 45*3, 45*5, 45*7]:
+    radius = r_f_p
+    alpha = (degre*math.pi)/180
+    hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
+    hole = Part.makeCylinder(d_vis_palier/2, h1)
+    hole.translate(hole_vector)
+    cylinder_1 = cylinder_1.cut(hole)
+
+# cut cylinder_1 by trou_mamelon for fixing the mamelon to poor mercury
+for degre in [90]:
+    radius = (86 + 25 + d_mamelon)/2
+    alpha = (degre*math.pi)/180
+    hole_vector = FreeCAD.Vector(radius*math.cos(alpha), radius*math.sin(alpha), 0)
+    hole = Part.makeCylinder(d_mamelon/2, h1)
+    hole.translate(hole_vector)
+    cylinder_1 = cylinder_1.cut(hole)
 
 Part.show(cylinder_1)
 
 DOC.recompute()
 
-__objs__=[]
+__objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_support").getObject("Shape"))
 
