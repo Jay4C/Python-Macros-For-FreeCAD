@@ -38,13 +38,13 @@ FreeCAD.getDocument(assembly).getObject("part_tige_filetee_m20_1000l").Placement
 
 # part_faraday_disc
 color = (0.90,0.80,0.70)
-i1 = round((1000 - (20 + 40 + 20*2 + 20 + 20)*2)/23) + 1
+i1 = round((1000 - 150*2)/23) - 3
 title = 'part_faraday_disc'
 stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + title + ".stl"
 for i in range(0, i1):
     x = 0
     y = 0
-    z = 20 + 40 + 20*2 + 20 + 20 + i * 23
+    z = (150 + 20*2 + 3) + i * 23
 
     if i == 0:
         Mesh.insert(stl_file,assembly)
@@ -65,13 +65,13 @@ for i in range(0, i1):
 
 # part_magnet_1d140_2d60_20e
 color = (0.70,0.70,0.70)
-i2 = round((1000 - (20 + 40 + 20*2 + 20 + 20 + 3)*2)/23)
+i2 = round((1000 - 150*2)/23) - 4
 title = 'part_magnet_1d140_2d60_20e'
 stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + title + ".stl"
 for i in range(0, i2):
     x = 0
     y = 0
-    z = 20 + 40 + 20*2 + 20 + 20 + 3 +i * 23
+    z = (150 + 20*2 + 3 + 3) + i * 23
 
     if i == 0:
         Mesh.insert(stl_file,assembly)
@@ -92,13 +92,13 @@ for i in range(0, i2):
 
 # assembly_magnets_1d40_2d20_10e
 color = (0.60,0.70,0.90)
-i3 = round((1000 - (20 + 40 + 20*2 + 20 + 20 + 3)*2)/23)
+i3 = round((1000 - 150*2)/23) - 4
 title = 'assembly_magnets_1d40_2d20_10e'
 stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + title + ".stl"
 for i in range(0, i3):
     x = 0
     y = 0
-    z = 20 + 40 + 20*2 + 20 + 20 + 3 +i * 23
+    z = (150 + 20*2 + 3 + 3) + i * 23
 
     if i == 0:
         Mesh.insert(stl_file,assembly)
@@ -116,6 +116,56 @@ for i in range(0, i3):
         Mesh.insert(stl_file,assembly)
         FreeCADGui.getDocument(assembly).getObject(title + str(i)).ShapeColor = color
         FreeCAD.getDocument(assembly).getObject(title + str(i)).Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
+# part_rondelle_20m
+x = 0
+y = 0
+z = 150 + 20*2
+part_rondelle_20m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_rondelle_20m.stl"
+Mesh.insert(part_rondelle_20m_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_rondelle_20m").ShapeColor = (0.10,0.20,0.30)
+FreeCAD.getDocument(assembly).getObject("part_rondelle_20m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
+x = 0
+y = 0
+z = 150 + 20*2 + 3 + (i1 - 1) * 23 + 3
+part_rondelle_20m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_rondelle_20m.stl"
+Mesh.insert(part_rondelle_20m_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_rondelle_20m001").ShapeColor = (0.10,0.20,0.30)
+FreeCAD.getDocument(assembly).getObject("part_rondelle_20m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
+# part_ecrou_20m
+x = 0
+y = 0
+z = 150
+part_ecrou_20m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_ecrou_20m.stl"
+Mesh.insert(part_ecrou_20m_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_ecrou_20m").ShapeColor = (0.20,0.50,0.70)
+FreeCAD.getDocument(assembly).getObject("part_ecrou_20m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
+x = 0
+y = 0
+z = 150 + 20
+part_ecrou_20m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_ecrou_20m.stl"
+Mesh.insert(part_ecrou_20m_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_ecrou_20m001").ShapeColor = (0.20,0.50,0.70)
+FreeCAD.getDocument(assembly).getObject("part_ecrou_20m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
+x = 0
+y = 0
+z = 150 + 20*2 + 3 + (i1 - 1) * 23 + 3*2
+part_ecrou_20m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_ecrou_20m.stl"
+Mesh.insert(part_ecrou_20m_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_ecrou_20m002").ShapeColor = (0.20,0.50,0.70)
+FreeCAD.getDocument(assembly).getObject("part_ecrou_20m002").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
+x = 0
+y = 0
+z = 150 + 20*2 + 3 + (i1 - 1) * 23 + 3*2 + 20
+part_ecrou_20m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_ecrou_20m.stl"
+Mesh.insert(part_ecrou_20m_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_ecrou_20m003").ShapeColor = (0.20,0.50,0.70)
+FreeCAD.getDocument(assembly).getObject("part_ecrou_20m003").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
 
 setview()
 
@@ -156,6 +206,14 @@ for i in range(0, i3):
     elif i >= 100 and i < 1000:
         __objs__.append(FreeCAD.getDocument(assembly).getObject(title + str(i)))
 
-Mesh.export(__objs__,u"" + assembly + ".stl")
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_20m"))
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_20m001"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m"))
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m001"))
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m002"))
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m003"))
+
+Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + assembly + ".stl")
 
 del __objs__
