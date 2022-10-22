@@ -2065,6 +2065,304 @@ setview()
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
+    # ok
+    # https://www.123courroies.com/moyeu-amovible/71701-moyeu-amovible-ma2517-20-4014486251982.html
+    def test_part_moyeu_amovible_generator(self):
+        print("test_part_moyeu_amovible_generator")
+
+        if os.path.exists("Scripts\\part_moyeu_amovible_generator.py"):
+            os.remove("Scripts\\part_moyeu_amovible_generator.py")
+        else:
+            print("The file does not exist")
+
+        # Writing to file
+        with open("Scripts\\part_moyeu_amovible_generator.py", "w") as file:
+            # Writing data to a file
+            file.write("""import FreeCAD, Part, Drawing, math, Mesh
+
+DOC = FreeCAD.activeDocument()
+
+DOC_NAME = "part_moyeu_amovible_generator"
+
+
+def clear_doc():
+    # Clear the active document deleting all the objects
+    for obj in DOC.Objects:
+        DOC.removeObject(obj.Name)
+
+
+def setview():
+    # Rearrange View
+    FreeCAD.Gui.SendMsgToActiveView("ViewFit")
+    FreeCAD.Gui.activeDocument().activeView().viewAxometric()
+
+
+if DOC is None:
+    FreeCAD.newDocument(DOC_NAME)
+    FreeCAD.setActiveDocument(DOC_NAME)
+    DOC = FreeCAD.activeDocument()
+else:
+    clear_doc()
+
+# EPS= tolerance to use to cut the parts
+EPS = 0.10
+EPS_C = EPS * -0.5
+
+# part_moyeu_amovible_generator
+De = 85.5
+L = 44.45
+Di = 20
+part_moyeu_amovible_generator = Part.makeCylinder(De/2, L)
+
+cylinder_1 = Part.makeCylinder(Di/2, L)
+
+# Cut part_moyeu_amovible_generator by cylinder_1
+part_moyeu_amovible_generator = part_moyeu_amovible_generator.cut(cylinder_1)
+
+Part.show(part_moyeu_amovible_generator)
+
+DOC.recompute()
+
+__objs__ = []
+
+__objs__.append(FreeCAD.getDocument("part_moyeu_amovible_generator").getObject("Shape"))
+
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_moyeu_amovible_generator.stl"
+
+Mesh.export(__objs__, stl_file)
+
+setview()
+
+# Generate PNG files
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_1\\\\Png\\\\part_moyeu_amovible_generator_'
+# Ombré
+Gui.runCommand('Std_DrawStyle',5)
+i = 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+# Filaire
+Gui.runCommand('Std_DrawStyle',2)
+i += 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+""")
+
+        time.sleep(3)
+
+        pywinauto.mouse.click(button="left", coords=(round(690 * 1.5), round(695 * 1.5)))
+
+        time.sleep(3)
+
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
+
+        time.sleep(3)
+
+        pywinauto.keyboard.send_keys(
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_1\\\\Scripts\\\\part_moyeu_amovible_generator.py"{)}.read{(}{)}{)}'
+        )
+
+        time.sleep(3)
+
+        pywinauto.keyboard.send_keys('{ENTER}')
+
+    # ok
+    # https://www.123courroies.com/profil-z-10x6-spz-10x8/74122-poulie-trapezoidale-moyeu-amovible-spz500-2ma-4014486251364.html
+    def test_part_poulie_generator(self):
+        print("test_part_poulie_generator")
+
+        if os.path.exists("Scripts\\part_poulie_generator.py"):
+            os.remove("Scripts\\part_poulie_generator.py")
+        else:
+            print("The file does not exist")
+
+        # Writing to file
+        with open("Scripts\\part_poulie_generator.py", "w") as file:
+            # Writing data to a file
+            file.write("""import FreeCAD, Part, Drawing, math, Mesh
+
+DOC = FreeCAD.activeDocument()
+
+DOC_NAME = "part_poulie_generator"
+
+
+def clear_doc():
+    # Clear the active document deleting all the objects
+    for obj in DOC.Objects:
+        DOC.removeObject(obj.Name)
+
+
+def setview():
+    # Rearrange View
+    FreeCAD.Gui.SendMsgToActiveView("ViewFit")
+    FreeCAD.Gui.activeDocument().activeView().viewAxometric()
+
+
+if DOC is None:
+    FreeCAD.newDocument(DOC_NAME)
+    FreeCAD.setActiveDocument(DOC_NAME)
+    DOC = FreeCAD.activeDocument()
+else:
+    clear_doc()
+
+# EPS= tolerance to use to cut the parts
+EPS = 0.10
+EPS_C = EPS * -0.5
+
+# part_poulie_generator
+De = 504
+L = 44.45
+Di = 85.5
+part_poulie_generator = Part.makeCylinder(De/2, L)
+
+cylinder_1 = Part.makeCylinder(Di/2, L)
+
+# Cut part_poulie_generator by cylinder_1
+part_poulie_generator = part_poulie_generator.cut(cylinder_1)
+
+Part.show(part_poulie_generator)
+
+DOC.recompute()
+
+__objs__ = []
+
+__objs__.append(FreeCAD.getDocument("part_poulie_generator").getObject("Shape"))
+
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_poulie_generator.stl"
+
+Mesh.export(__objs__, stl_file)
+
+setview()
+
+# Generate PNG files
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_1\\\\Png\\\\part_poulie_generator_'
+# Ombré
+Gui.runCommand('Std_DrawStyle',5)
+i = 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+# Filaire
+Gui.runCommand('Std_DrawStyle',2)
+i += 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+""")
+
+        time.sleep(3)
+
+        pywinauto.mouse.click(button="left", coords=(round(690 * 1.5), round(695 * 1.5)))
+
+        time.sleep(3)
+
+        pywinauto.mouse.click(button="left", coords=(round(60 * 1.5), round(615 * 1.5)))
+
+        time.sleep(3)
+
+        pywinauto.keyboard.send_keys(
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_1\\\\Scripts\\\\part_poulie_generator.py"{)}.read{(}{)}{)}'
+        )
+
+        time.sleep(3)
+
+        pywinauto.keyboard.send_keys('{ENTER}')
+
 
 class UnitsTestsHGVersion1Assemblies(unittest.TestCase):
     # ok
@@ -2685,7 +2983,7 @@ del __objs__
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    #
+    # ok
     def test_assembly_generator(self):
         print("test_assembly_generator")
 
@@ -3019,6 +3317,26 @@ Mesh.insert(part_ecrou_20m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_20m003").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_20m003").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,1,0),0))
 
+# part_moyeu_amovible_generator
+color = (0.60,0.60,0.60)
+x = 0
+y = 0
+z = 150 - 5 - 33.3 - 3 - 16 - 3 - 1 - 38 - 16 + 11 - 3 - 16 - 1 - 21.5
+part_moyeu_amovible_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_moyeu_amovible_generator.stl"
+Mesh.insert(part_moyeu_amovible_generator_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_moyeu_amovible_generator").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("part_moyeu_amovible_generator").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
+# part_poulie_generator
+color = (0.60,0.10,0.10)
+x = 0
+y = 0
+z = 150 - 5 - 33.3 - 3 - 16 - 3 - 1 - 38 - 16 + 11 - 3 - 16 - 1 - 21.5
+part_poulie_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_poulie_generator.stl"
+Mesh.insert(part_poulie_generator_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_poulie_generator").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("part_poulie_generator").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
 setview()
 
 # Export
@@ -3099,6 +3417,10 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_20m005"))
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m002"))
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m003"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_moyeu_amovible_generator"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_poulie_generator"))
 
 Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + assembly + ".stl")
 

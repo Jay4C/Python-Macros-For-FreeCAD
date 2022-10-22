@@ -320,6 +320,26 @@ Mesh.insert(part_ecrou_20m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_20m003").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_20m003").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,1,0),0))
 
+# part_moyeu_amovible_generator
+color = (0.60,0.60,0.60)
+x = 0
+y = 0
+z = 150 - 5 - 33.3 - 3 - 16 - 3 - 1 - 38 - 16 + 11 - 3 - 16 - 1 - 21.5
+part_moyeu_amovible_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_moyeu_amovible_generator.stl"
+Mesh.insert(part_moyeu_amovible_generator_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_moyeu_amovible_generator").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("part_moyeu_amovible_generator").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
+# part_poulie_generator
+color = (0.60,0.10,0.10)
+x = 0
+y = 0
+z = 150 - 5 - 33.3 - 3 - 16 - 3 - 1 - 38 - 16 + 11 - 3 - 16 - 1 - 21.5
+part_poulie_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_poulie_generator.stl"
+Mesh.insert(part_poulie_generator_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_poulie_generator").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("part_poulie_generator").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
 setview()
 
 # Export
@@ -400,6 +420,10 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_20m005"))
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m002"))
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m003"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_moyeu_amovible_generator"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_poulie_generator"))
 
 Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + assembly + ".stl")
 
