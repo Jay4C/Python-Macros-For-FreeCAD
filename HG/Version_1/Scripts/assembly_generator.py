@@ -321,6 +321,7 @@ FreeCADGui.getDocument(assembly).getObject("part_ecrou_20m003").ShapeColor = col
 FreeCAD.getDocument(assembly).getObject("part_ecrou_20m003").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,1,0),0))
 
 # part_moyeu_amovible_generator
+'''
 color = (0.60,0.60,0.60)
 x = 0
 y = 0
@@ -329,8 +330,10 @@ part_moyeu_amovible_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-
 Mesh.insert(part_moyeu_amovible_generator_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_moyeu_amovible_generator").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_moyeu_amovible_generator").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+'''
 
 # part_poulie_generator
+'''
 color = (0.60,0.10,0.10)
 x = 0
 y = 0
@@ -339,6 +342,7 @@ part_poulie_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-F
 Mesh.insert(part_poulie_generator_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_poulie_generator").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_poulie_generator").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+'''
 
 setview()
 
@@ -421,10 +425,72 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m002"))
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_20m003"))
 
-__objs__.append(FreeCAD.getDocument(assembly).getObject("part_moyeu_amovible_generator"))
+# __objs__.append(FreeCAD.getDocument(assembly).getObject("part_moyeu_amovible_generator"))
 
-__objs__.append(FreeCAD.getDocument(assembly).getObject("part_poulie_generator"))
+# __objs__.append(FreeCAD.getDocument(assembly).getObject("part_poulie_generator"))
 
 Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/" + assembly + ".stl")
 
 del __objs__
+
+# Generate PNG files
+file = 'C:\\Users\\Jason\\Documents\\Devs\\Python-Macros-For-FreeCAD\\HG\\Version_1\\Png\\assembly_generator_'
+# Ombré
+Gui.runCommand('Std_DrawStyle',5)
+i = 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+# Filaire
+Gui.runCommand('Std_DrawStyle',2)
+i += 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
