@@ -46,7 +46,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_ecrou_30m").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_ecrou_30m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_30m.stl"
 
 Mesh.export(__objs__, stl_file)
 
