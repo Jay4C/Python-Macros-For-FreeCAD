@@ -42,7 +42,7 @@ h_palier_2_fixation_support = 40.2
 h_palier_2_fixation_ossature = 48
 h_poulie_generator = 25.4
 L_tube = 1000 - (e_support + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + h_palier_2_fixation_ossature + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + h_poulie_generator + h_rondelle_30m + h_ecrou_30m) - (e_support + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + h_palier_2_fixation_ossature + h_rondelle_30m + h_ecrou_30m)
-h1 = (L_tube - 170)/2
+h1 = (L_tube - 400)/2
 
 # hole length
 h2 = h1 - 5
@@ -96,6 +96,21 @@ cylinder_1 = cylinder_1.cut(cylinder_3)
 # Cut cylinder_1 by cylinder_5
 cylinder_5 = Part.makeCylinder(d_arbre/2, h1)
 cylinder_1 = cylinder_1.cut(cylinder_5)
+
+# Cut the holes for emptying the part
+degre = 30
+for i1 in range(0, 2):
+    for i2 in range(int(360/degre)):
+        d_hole = 20
+        z_hole = (d_hole + 5) * ( i1 + 1)
+        axe_y = FreeCAD.Vector(0, 1, 0)
+        axe_z = FreeCAD.Vector(0, 0, 1)
+        radius_screw = 0
+        alpha=(i2*degre*math.pi)/180
+        hole_vector = FreeCAD.Vector(radius_screw*math.cos(alpha), radius_screw*math.sin(alpha), z_hole)
+        hole = Part.makeCylinder(d_hole/2, d1, hole_vector, axe_y)
+        hole.rotate(hole_vector, axe_z, alpha*(360/(2*math.pi)) - 90)
+        cylinder_1 = cylinder_1.cut(hole)
 
 Part.show(cylinder_1)
 

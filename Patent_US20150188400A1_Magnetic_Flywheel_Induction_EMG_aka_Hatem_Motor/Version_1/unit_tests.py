@@ -11,13 +11,13 @@ class UnitTestsPatentUS20150188400A1MagneticFlywheelInductionEMGakaHatemMotor(un
     def test_part_rotor(self):
         print("test_part_rotor")
 
-        if os.path.exists("part_rotor.py"):
-            os.remove("part_rotor.py")
+        if os.path.exists("Scripts\\part_rotor.py"):
+            os.remove("Scripts\\part_rotor.py")
         else:
             print("The file does not exist")
 
         # Writing to file
-        with open("part_rotor.py", "w") as file:
+        with open("Scripts\\part_rotor.py", "w") as file:
             # Writing data to a file
             file.write("""import FreeCAD, Part, Drawing, math, Mesh, importDXF
 
@@ -109,15 +109,77 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_rotor").getObject("Shape"))
 
-stl_file = u"part_rotor.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Patent_US20150188400A1_Magnetic_Flywheel_Induction_EMG_aka_Hatem_Motor/Version_1/Stl/part_rotor.stl"
 
 Mesh.export(__objs__, stl_file)
 
-dxf_file = u"part_rotor.dxf"
+dxf_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/Patent_US20150188400A1_Magnetic_Flywheel_Induction_EMG_aka_Hatem_Motor/Version_1/Stl/part_rotor.dxf"
 
 importDXF.export(__objs__, dxf_file)
 
 setview()
+
+# Generate PNG files
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Patent_US20150188400A1_Magnetic_Flywheel_Induction_EMG_aka_Hatem_Motor\\\\Version_1\\\\Png\\\\part_rotor_'
+# Ombré
+Gui.runCommand('Std_DrawStyle',5)
+i = 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+# Filaire
+Gui.runCommand('Std_DrawStyle',2)
+i += 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
 """)
 
         time.sleep(3)
@@ -131,7 +193,7 @@ setview()
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"part_rotor.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\Patent_US20150188400A1_Magnetic_Flywheel_Induction_EMG_aka_Hatem_Motor\\\\Version_1\\\\Scripts\\\\part_rotor.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)

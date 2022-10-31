@@ -50,7 +50,7 @@ trou_arbre.translate(trou_arbre_vector)
 part_palier_2_fixation_support = part_palier_2_fixation_support.cut(trou_arbre)
 
 # Cut part_palier_2_fixation_support by trou_vis
-D_vis = 17
+D_vis = 16
 trou_vis = Part.makeCylinder(D_vis/2, y)
 
 # rotation trou_vis
@@ -80,7 +80,7 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_palier_2_fixation_support").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_1/Stl/part_palier_2_fixation_support.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_palier_2_fixation_support.stl"
 
 Mesh.export(__objs__, stl_file)
 

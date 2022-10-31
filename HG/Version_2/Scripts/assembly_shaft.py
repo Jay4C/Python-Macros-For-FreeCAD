@@ -147,6 +147,7 @@ setview()
 
 # Export
 __objs__ = []
+
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_tige_filetee_m30_1000l"))
 
 title = "part_faraday_disc"
@@ -170,6 +171,21 @@ for i in range(0, i2):
         __objs__.append(FreeCAD.getDocument(assembly).getObject(title + "0" + str(i)))
     elif i >= 100 and i < 1000:
         __objs__.append(FreeCAD.getDocument(assembly).getObject(title + str(i)))
+
+# part_tube
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_tube"))
+
+# part_rondelle_30m
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_30m"))
+
+# part_ecrou_30m
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_30m"))
+
+# part_rondelle_30m001
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_30m001"))
+
+# part_ecrou_30m001
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_30m001"))
 
 Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + assembly + ".stl")
 
