@@ -39,6 +39,8 @@ h_palier_2_fixation_ossature = 48
 h_poulie_generator = 25.4
 L = 1000 - (e_support + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + h_palier_2_fixation_ossature + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + h_poulie_generator + h_rondelle_30m + h_ecrou_30m) - (e_support + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + h_palier_2_fixation_ossature + h_rondelle_30m + h_ecrou_30m)
 
+print(L)
+
 part_tube = Part.makeCylinder(r_tube, L)
 
 cylinder_1 = Part.makeCylinder(r_tube - e_tube, L)
