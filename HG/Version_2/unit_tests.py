@@ -2692,7 +2692,7 @@ del __objs__
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    #
+    # ok
     def test_assembly_poulie(self):
         print("test_assembly_poulie")
 
@@ -2736,6 +2736,11 @@ EPS_C = EPS * -0.5
 
 assembly = "assembly_poulie"
 
+# Parameters
+h_rondelle_30m = 4
+h_poulie_generator = 25.4
+k_vis_metal_30m_70l = 18.7
+
 # part_moyeu_amovible_generator
 color = (0.10, 0.20, 0.30)
 part_moyeu_amovible_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_moyeu_amovible_generator.stl"
@@ -2750,12 +2755,62 @@ Mesh.insert(part_poulie_generator_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_poulie_generator").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_poulie_generator").Placement = App.Placement(App.Vector(0,0,0),App.Rotation(App.Vector(0,0,1),0))
 
+# part_rondelle_30m
+x = 0
+y = 0
+z = h_poulie_generator
+color = (0.10, 0.00, 0.00)
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+Mesh.insert(part_rondelle_30m_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("part_rondelle_30m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
+
+# part_rondelle_30m
+x = 0
+y = 0
+z = - h_rondelle_30m
+color = (0.10, 0.00, 0.00)
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+Mesh.insert(part_rondelle_30m_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m001").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("part_rondelle_30m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
+
+# part_vis_metal_m30_70l
+x = 0
+y = 0
+z = - h_rondelle_30m - k_vis_metal_30m_70l
+color = (0.10, 0.90, 0.90)
+part_vis_metal_m30_70l_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_vis_metal_m30_70l.stl"
+Mesh.insert(part_vis_metal_m30_70l_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_vis_metal_m30_70l").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("part_vis_metal_m30_70l").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
+
+# part_accouplement_rigide_mecanique
+x = 0
+y = 0
+z = h_poulie_generator + h_rondelle_30m
+color = (0.20, 0.70, 0.90)
+part_accouplement_rigide_mecanique_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_accouplement_rigide_mecanique.stl"
+Mesh.insert(part_accouplement_rigide_mecanique_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("part_accouplement_rigide_mecanique").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("part_accouplement_rigide_mecanique").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
+
 setview()
 
 # Export
 __objs__ = []
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_moyeu_amovible_generator"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_poulie_generator"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_30m"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_30m001"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_vis_metal_m30_70l"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_accouplement_rigide_mecanique"))
 
 Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + assembly + ".stl")
 
@@ -2780,7 +2835,7 @@ del __objs__
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    #
+    # ok
     def test_assembly_generator(self):
         print("test_assembly_generator")
 
@@ -2963,6 +3018,26 @@ Mesh.insert(part_ecrou_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_30m001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_30m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
 
+# assembly_poulie
+x = 0
+y = 0
+z = - h_palier_2_fixation_ossature - h_rondelle_30m - h_ecrou_30m + 1
+color = (0.40, 0.40, 0.40)
+assembly_poulie_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/assembly_poulie.stl"
+Mesh.insert(assembly_poulie_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("assembly_poulie").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("assembly_poulie").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
+
+# assembly_poulie
+x = 0
+y = 0
+z = (1000 - L_tube)/2 + L_tube + h1 + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + h_palier_2_fixation_ossature + h_rondelle_30m + h_ecrou_30m + h_ecrou_30m/2 + 2
+color = (0.40, 0.40, 0.40)
+assembly_poulie_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/assembly_poulie.stl"
+Mesh.insert(assembly_poulie_stl_file, assembly)
+FreeCADGui.getDocument(assembly).getObject("assembly_poulie001").ShapeColor = color
+FreeCAD.getDocument(assembly).getObject("assembly_poulie001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),180))
+
 setview()
 
 # Export
@@ -2980,6 +3055,8 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("part_tige_filetee_m16_1
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_palier_2_fixation_ossature"))
 
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_palier_2_fixation_ossature001"))
+
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_30m"))
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_30m001"))
@@ -2987,6 +3064,12 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_30m001"))
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_30m"))
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_30m002"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_30m001"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("assembly_poulie"))
+
+__objs__.append(FreeCAD.getDocument(assembly).getObject("assembly_poulie001"))
 
 Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + assembly + ".stl")
 
