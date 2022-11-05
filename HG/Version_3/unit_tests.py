@@ -7,7 +7,7 @@ import time
 
 # Homopolar generator
 # https://patentimages.storage.googleapis.com/0c/c9/14/0e4d740f16793e/WO1995008210A1.pdf
-class UnitsTestsHGVersion2Parts(unittest.TestCase):
+class UnitsTestsHGVersion3Parts(unittest.TestCase):
     # ok
     # https://www.visseriefixations.fr/tiges-filetees/acier-classe-4-6/tige-filetee-acier-4-6-brut-din-975/tige-filetee-m30-acier-4-6-brut-din-975.html
     def test_part_tige_filetee_m30_1000l(self):
@@ -64,14 +64,14 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_tige_filetee_m30_1000l").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_tige_filetee_m30_1000l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_tige_filetee_m30_1000l.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_tige_filetee_m30_1000l_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_tige_filetee_m30_1000l_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -144,7 +144,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_tige_filetee_m30_1000l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_tige_filetee_m30_1000l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -212,14 +212,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_ecrou_30m").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_30m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_30m.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_ecrou_30m_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_ecrou_30m_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -292,7 +292,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_ecrou_30m.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_ecrou_30m.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -360,14 +360,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_rondelle_30m").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_rondelle_30m_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_rondelle_30m_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -440,7 +440,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_rondelle_30m.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_rondelle_30m.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -508,11 +508,11 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_faraday_disc").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_faraday_disc.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_faraday_disc.stl"
 
 Mesh.export(__objs__, stl_file)
 
-dxf_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_faraday_disc.dxf"
+dxf_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_faraday_disc.dxf"
 
 importDXF.export(__objs__, dxf_file)
 
@@ -521,7 +521,7 @@ setview()
 del __objs__
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_faraday_disc_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_faraday_disc_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -594,7 +594,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_faraday_disc.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_faraday_disc.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -662,14 +662,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_magnet_1d72_2d32_15e").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_magnet_1d72_2d32_15e.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_magnet_1d72_2d32_15e.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_magnet_1d72_2d32_15e_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_magnet_1d72_2d32_15e_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -742,7 +742,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_magnet_1d72_2d32_15e.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_magnet_1d72_2d32_15e.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -844,14 +844,14 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_palier_2_fixation_support").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_palier_2_fixation_support.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_palier_2_fixation_support.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_palier_2_fixation_support_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_palier_2_fixation_support_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -924,7 +924,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_palier_2_fixation_support.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_palier_2_fixation_support.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1021,14 +1021,14 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_palier_2_fixation_ossature").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_palier_2_fixation_ossature.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_palier_2_fixation_ossature.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_palier_2_fixation_ossature_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_palier_2_fixation_ossature_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1101,7 +1101,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_palier_2_fixation_ossature.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_palier_2_fixation_ossature.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1178,14 +1178,14 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_tube").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_tube.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_tube.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_tube_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_tube_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1258,7 +1258,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_tube.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_tube.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1400,7 +1400,7 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_support").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_support.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_support.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -1418,7 +1418,7 @@ setview()
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_support.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_support.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1487,14 +1487,14 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_moyeu_amovible_generator").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_moyeu_amovible_generator.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_moyeu_amovible_generator.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_moyeu_amovible_generator_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_moyeu_amovible_generator_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1567,7 +1567,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_moyeu_amovible_generator.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_moyeu_amovible_generator.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1636,14 +1636,14 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_poulie_generator").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_poulie_generator.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_poulie_generator.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_poulie_generator_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_poulie_generator_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1716,7 +1716,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_poulie_generator.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_poulie_generator.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1785,14 +1785,14 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_accouplement_rigide_mecanique").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_accouplement_rigide_mecanique.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_accouplement_rigide_mecanique.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_accouplement_rigide_mecanique_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_accouplement_rigide_mecanique_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -1865,7 +1865,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_accouplement_rigide_mecanique.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_accouplement_rigide_mecanique.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -1933,7 +1933,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_rondelle_16m").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_16m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_16m.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -1951,7 +1951,7 @@ setview()
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_rondelle_16m.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_rondelle_16m.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -2019,7 +2019,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_ecrou_16m").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_16m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_16m.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -2037,7 +2037,7 @@ setview()
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_ecrou_16m.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_ecrou_16m.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -2109,14 +2109,14 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_tige_filetee_m16_1000l_cut").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_tige_filetee_m16_1000l_cut.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_tige_filetee_m16_1000l_cut.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_tige_filetee_m16_1000l_cut_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_tige_filetee_m16_1000l_cut_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -2189,7 +2189,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_tige_filetee_m16_1000l_cut.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_tige_filetee_m16_1000l_cut.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -2267,7 +2267,7 @@ DOC.recompute()
 __objs__ = []
 __objs__.append(FreeCAD.getDocument("part_vis_metal_m30_70l").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_vis_metal_m30_70l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_vis_metal_m30_70l.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -2285,7 +2285,7 @@ setview()
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_vis_metal_m30_70l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_vis_metal_m30_70l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -2293,8 +2293,8 @@ setview()
         pywinauto.keyboard.send_keys('{ENTER}')
 
 
-class UnitTestsHGVersion2Assemblies(unittest.TestCase):
-    # ok
+class UnitTestsHGVersion3Assemblies(unittest.TestCase):
+    #
     def test_assembly_shaft(self):
         print("test_assembly_shaft")
 
@@ -2351,7 +2351,7 @@ Start_faraday_disc = (1000 - L_tube)/2 + h_rondelle_30m + h_ecrou_30m
 h_disc_and_magnet = h_disc + h_magnet
 
 # part_tige_filetee_m30_1000l
-part_tige_filetee_m30_1000l_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_tige_filetee_m30_1000l.stl"
+part_tige_filetee_m30_1000l_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_tige_filetee_m30_1000l.stl"
 Mesh.insert(part_tige_filetee_m30_1000l_stl_file,assembly)
 FreeCADGui.getDocument(assembly).getObject("part_tige_filetee_m30_1000l").ShapeColor = (0.10,0.10,0.10)
 FreeCAD.getDocument(assembly).getObject("part_tige_filetee_m30_1000l").Placement = App.Placement(App.Vector(0,0,0),App.Rotation(App.Vector(0,0,1),0))
@@ -2360,7 +2360,7 @@ FreeCAD.getDocument(assembly).getObject("part_tige_filetee_m30_1000l").Placement
 color = (0.90, 0.80, 0.70)
 i1 = round((L_tube - 2*h_rondelle_30m - 2*h_ecrou_30m)/h_disc_and_magnet)
 title = 'part_faraday_disc'
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + title + ".stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/" + title + ".stl"
 for i in range(0, i1):
     x = 0
     y = 0
@@ -2387,7 +2387,7 @@ for i in range(0, i1):
 color = (0.70, 0.70, 0.70)
 i2 = round((L_tube - 2*h_rondelle_30m - 2*h_ecrou_30m)/h_disc_and_magnet)
 title = 'part_magnet_1d72_2d32_15e'
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + title + ".stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/" + title + ".stl"
 for i in range(0, i2):
     x = 0
     y = 0
@@ -2412,21 +2412,21 @@ for i in range(0, i2):
 
 # part_tube
 color = (0.45, 0.99, 0.05)
-part_tube_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_tube.stl"
+part_tube_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_tube.stl"
 Mesh.insert(part_tube_stl_file,assembly)
 FreeCADGui.getDocument(assembly).getObject("part_tube").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_tube").Placement = App.Placement(App.Vector(0,0,Start_faraday_disc - h_rondelle_30m - h_ecrou_30m),App.Rotation(App.Vector(0,0,1),0))
 
 # part_rondelle_30m
 color = (0.45, 0.05, 0.95)
-part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 Mesh.insert(part_rondelle_30m_stl_file,assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_30m").Placement = App.Placement(App.Vector(0,0,Start_faraday_disc - h_rondelle_30m),App.Rotation(App.Vector(0,0,1),0))
 
 # part_ecrou_30m
 color = (0.45, 0.55, 0.65)
-part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_30m.stl"
+part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_30m.stl"
 Mesh.insert(part_ecrou_30m_stl_file,assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_30m").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_30m").Placement = App.Placement(App.Vector(0,0,Start_faraday_disc - h_rondelle_30m - h_ecrou_30m),App.Rotation(App.Vector(0,0,1),0))
@@ -2436,7 +2436,7 @@ color = (0.45, 0.05, 0.95)
 x = 0
 y = 0
 z = Start_faraday_disc + h_disc + i2 * h_disc_and_magnet - h_rondelle_30m - 1
-part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 Mesh.insert(part_rondelle_30m_stl_file,assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_30m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2446,7 +2446,7 @@ color = (0.45, 0.55, 0.65)
 x = 0
 y = 0
 z = Start_faraday_disc + h_disc + i2 * h_disc_and_magnet - 1
-part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_30m.stl"
+part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_30m.stl"
 Mesh.insert(part_ecrou_30m_stl_file,assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_30m001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_30m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2495,7 +2495,7 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("part_rondelle_30m001"))
 # part_ecrou_30m001
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_30m001"))
 
-Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + assembly + ".stl")
+Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/" + assembly + ".stl")
 
 del __objs__
 """)
@@ -2511,14 +2511,14 @@ del __objs__
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\assembly_shaft.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\assembly_shaft.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_assembly_support(self):
         print("test_assembly_support")
 
@@ -2575,7 +2575,7 @@ h1 = (L_tube - 400)/2
 
 # part_support
 color = (0.10, 0.20, 0.30)
-part_support_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_support.stl"
+part_support_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_support.stl"
 Mesh.insert(part_support_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_support").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_support").Placement = App.Placement(App.Vector(0,0,0),App.Rotation(App.Vector(0,0,1),0))
@@ -2585,7 +2585,7 @@ x = -148/2
 y = 80/2
 z = h1
 color = (0.20, 0.40, 0.60)
-part_palier_2_fixation_support_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_palier_2_fixation_support.stl"
+part_palier_2_fixation_support_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_palier_2_fixation_support.stl"
 Mesh.insert(part_palier_2_fixation_support_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_palier_2_fixation_support").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_palier_2_fixation_support").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),90))    
@@ -2595,7 +2595,7 @@ x = 0
 y = 0
 z = h1 + h_palier_2_fixation_support
 color = (0.40, 0.60, 0.80)
-part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 Mesh.insert(part_rondelle_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_30m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2605,7 +2605,7 @@ x = 0
 y = 0
 z = h1 + h_palier_2_fixation_support + h_rondelle_30m
 color = (0.60, 0.80, 0.90)
-part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_30m.stl"
+part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_30m.stl"
 Mesh.insert(part_ecrou_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_30m").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_30m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2615,7 +2615,7 @@ x = 117/2
 y = 0
 z = h1 + h_palier_2_fixation_support
 color = (0.10, 0.00, 0.20)
-part_rondelle_16m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_16m.stl"
+part_rondelle_16m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_16m.stl"
 Mesh.insert(part_rondelle_16m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_16m").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_16m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2625,7 +2625,7 @@ x = -117/2
 y = 0
 z = h1 + h_palier_2_fixation_support
 color = (0.10, 0.00, 0.20)
-part_rondelle_16m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_16m.stl"
+part_rondelle_16m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_16m.stl"
 Mesh.insert(part_rondelle_16m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_16m001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_16m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2635,7 +2635,7 @@ x = 117/2
 y = 0
 z = h1 + h_palier_2_fixation_support + h_rondelle_16m
 color = (0.10, 0.90, 0.20)
-part_ecrou_16m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_16m.stl"
+part_ecrou_16m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_16m.stl"
 Mesh.insert(part_ecrou_16m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_16m").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_16m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2645,7 +2645,7 @@ x = -117/2
 y = 0
 z = h1 + h_palier_2_fixation_support + h_rondelle_16m
 color = (0.10, 0.90, 0.20)
-part_ecrou_16m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_16m.stl"
+part_ecrou_16m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_16m.stl"
 Mesh.insert(part_ecrou_16m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_16m001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_16m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2671,7 +2671,7 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_16m"))
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_ecrou_16m001"))
 
-Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + assembly + ".stl")
+Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/" + assembly + ".stl")
 
 del __objs__
 """)
@@ -2687,14 +2687,14 @@ del __objs__
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\assembly_support.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\assembly_support.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_assembly_poulie(self):
         print("test_assembly_poulie")
 
@@ -2745,14 +2745,14 @@ k_vis_metal_30m_70l = 18.7
 
 # part_moyeu_amovible_generator
 color = (0.10, 0.20, 0.30)
-part_moyeu_amovible_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_moyeu_amovible_generator.stl"
+part_moyeu_amovible_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_moyeu_amovible_generator.stl"
 Mesh.insert(part_moyeu_amovible_generator_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_moyeu_amovible_generator").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_moyeu_amovible_generator").Placement = App.Placement(App.Vector(0,0,0),App.Rotation(App.Vector(0,0,1),0))
 
 # part_poulie_generator
 color = (0.30, 0.60, 0.90)
-part_poulie_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_poulie_generator.stl"
+part_poulie_generator_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_poulie_generator.stl"
 Mesh.insert(part_poulie_generator_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_poulie_generator").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_poulie_generator").Placement = App.Placement(App.Vector(0,0,0),App.Rotation(App.Vector(0,0,1),0))
@@ -2762,7 +2762,7 @@ x = 0
 y = 0
 z = h_poulie_generator
 color = (0.10, 0.00, 0.00)
-part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 Mesh.insert(part_rondelle_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_30m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2772,7 +2772,7 @@ x = 0
 y = 0
 z = - h_rondelle_30m
 color = (0.10, 0.00, 0.00)
-part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 Mesh.insert(part_rondelle_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_30m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2782,7 +2782,7 @@ x = 0
 y = 0
 z = - h_rondelle_30m - k_vis_metal_30m_70l
 color = (0.10, 0.90, 0.90)
-part_vis_metal_m30_70l_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_vis_metal_m30_70l.stl"
+part_vis_metal_m30_70l_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_vis_metal_m30_70l.stl"
 Mesh.insert(part_vis_metal_m30_70l_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_vis_metal_m30_70l").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_vis_metal_m30_70l").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2792,7 +2792,7 @@ x = 0
 y = 0
 z = h_poulie_generator + h_rondelle_30m
 color = (0.20, 0.70, 0.90)
-part_accouplement_rigide_mecanique_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_accouplement_rigide_mecanique.stl"
+part_accouplement_rigide_mecanique_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_accouplement_rigide_mecanique.stl"
 Mesh.insert(part_accouplement_rigide_mecanique_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_accouplement_rigide_mecanique").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_accouplement_rigide_mecanique").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2814,7 +2814,7 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("part_vis_metal_m30_70l"
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("part_accouplement_rigide_mecanique"))
 
-Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + assembly + ".stl")
+Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/" + assembly + ".stl")
 
 del __objs__
 """)
@@ -2830,14 +2830,14 @@ del __objs__
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\assembly_poulie.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\assembly_poulie.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     def test_assembly_generator(self):
         print("test_assembly_generator")
 
@@ -2895,7 +2895,7 @@ h1 = (L_tube - 400)/2
 
 # assembly_shaft
 color = (0.10, 0.20, 0.30)
-assembly_shaft_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/assembly_shaft.stl"
+assembly_shaft_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/assembly_shaft.stl"
 Mesh.insert(assembly_shaft_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("assembly_shaft").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("assembly_shaft").Placement = App.Placement(App.Vector(0,0,0),App.Rotation(App.Vector(0,0,1),0))
@@ -2905,7 +2905,7 @@ x = 0
 y = 0
 z = (1000 - L_tube)/2 + h1 - 5
 color = (0.20, 0.40, 0.60)
-assembly_support_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/assembly_support.stl"
+assembly_support_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/assembly_support.stl"
 Mesh.insert(assembly_support_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("assembly_support").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("assembly_support").Placement = App.Placement(App.Vector(0,0,z),App.Rotation(App.Vector(0,1,0),180))
@@ -2915,7 +2915,7 @@ x = 0
 y = 0
 z = (1000 - L_tube)/2 + L_tube - h1 + 5 + 2
 color = (0.20, 0.40, 0.60)
-assembly_support_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/assembly_support.stl"
+assembly_support_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/assembly_support.stl"
 Mesh.insert(assembly_support_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("assembly_support001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("assembly_support001").Placement = App.Placement(App.Vector(0,0,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2925,7 +2925,7 @@ x = 117/2
 y = 0
 z = h1 + h_palier_2_fixation_support - 6
 color = (0.30, 0.90, 0.60)
-part_tige_filetee_m16_1000l_cut_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_tige_filetee_m16_1000l_cut.stl"
+part_tige_filetee_m16_1000l_cut_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_tige_filetee_m16_1000l_cut.stl"
 Mesh.insert(part_tige_filetee_m16_1000l_cut_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_tige_filetee_m16_1000l_cut").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_tige_filetee_m16_1000l_cut").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2935,7 +2935,7 @@ x = -117/2
 y = 0
 z = h1 + h_palier_2_fixation_support - 6
 color = (0.30, 0.90, 0.60)
-part_tige_filetee_m16_1000l_cut_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_tige_filetee_m16_1000l_cut.stl"
+part_tige_filetee_m16_1000l_cut_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_tige_filetee_m16_1000l_cut.stl"
 Mesh.insert(part_tige_filetee_m16_1000l_cut_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_tige_filetee_m16_1000l_cut001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_tige_filetee_m16_1000l_cut001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(0,0,1),0))
@@ -2945,7 +2945,7 @@ x = 0
 y = 0
 z = (1000 - L_tube)/2 - 5 - h_palier_2_fixation_support - h_rondelle_30m - h_ecrou_30m - h_rondelle_30m
 color = (0.90, 0.50, 0.40)
-part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 Mesh.insert(part_rondelle_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_30m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
@@ -2955,7 +2955,7 @@ x = -165/2
 y = 84/2
 z = (1000 - L_tube)/2 - 5 - h_palier_2_fixation_support - h_rondelle_30m - h_ecrou_30m - h_rondelle_30m - h_palier_2_fixation_ossature
 color = (0.50, 0.90, 0.40)
-part_palier_2_fixation_ossature_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_palier_2_fixation_ossature.stl"
+part_palier_2_fixation_ossature_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_palier_2_fixation_ossature.stl"
 Mesh.insert(part_palier_2_fixation_ossature_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_palier_2_fixation_ossature").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_palier_2_fixation_ossature").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),90))
@@ -2965,7 +2965,7 @@ x = 0
 y = 0
 z = (1000 - L_tube)/2 - 5 - h_palier_2_fixation_support - h_rondelle_30m - h_ecrou_30m - h_rondelle_30m - h_palier_2_fixation_ossature - h_rondelle_30m
 color = (0.90, 0.50, 0.40)
-part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 Mesh.insert(part_rondelle_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_30m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
@@ -2975,7 +2975,7 @@ x = 0
 y = 0
 z = (1000 - L_tube)/2 - 5 - h_palier_2_fixation_support - h_rondelle_30m - h_ecrou_30m - h_rondelle_30m - h_palier_2_fixation_ossature - h_rondelle_30m - h_ecrou_30m
 color = (0.40, 0.30, 0.00)
-part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_30m.stl"
+part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_30m.stl"
 Mesh.insert(part_ecrou_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_30m").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_30m").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
@@ -2985,7 +2985,7 @@ x = 0
 y = 0
 z = (1000 - L_tube)/2 + L_tube + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + 3
 color = (0.90, 0.50, 0.40)
-part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 Mesh.insert(part_rondelle_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m002").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_30m002").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
@@ -2995,7 +2995,7 @@ x = -165/2
 y = 84/2
 z = (1000 - L_tube)/2 + L_tube + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + 3 + h_rondelle_30m
 color = (0.50, 0.90, 0.40)
-part_palier_2_fixation_ossature_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_palier_2_fixation_ossature.stl"
+part_palier_2_fixation_ossature_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_palier_2_fixation_ossature.stl"
 Mesh.insert(part_palier_2_fixation_ossature_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_palier_2_fixation_ossature001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_palier_2_fixation_ossature001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),90))
@@ -3005,7 +3005,7 @@ x = 0
 y = 0
 z = (1000 - L_tube)/2 + L_tube + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + 3 + h_rondelle_30m + h_palier_2_fixation_ossature
 color = (0.90, 0.50, 0.40)
-part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_30m.stl"
+part_rondelle_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_30m.stl"
 Mesh.insert(part_rondelle_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_rondelle_30m003").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_rondelle_30m003").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
@@ -3015,7 +3015,7 @@ x = 0
 y = 0
 z = (1000 - L_tube)/2 + L_tube + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + 3 + h_rondelle_30m + h_palier_2_fixation_ossature + h_rondelle_30m
 color = (0.40, 0.30, 0.00)
-part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_30m.stl"
+part_ecrou_30m_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_30m.stl"
 Mesh.insert(part_ecrou_30m_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("part_ecrou_30m001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("part_ecrou_30m001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
@@ -3025,7 +3025,7 @@ x = 0
 y = 0
 z = - h_palier_2_fixation_ossature - h_rondelle_30m - h_ecrou_30m + 1
 color = (0.40, 0.40, 0.40)
-assembly_poulie_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/assembly_poulie.stl"
+assembly_poulie_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/assembly_poulie.stl"
 Mesh.insert(assembly_poulie_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("assembly_poulie").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("assembly_poulie").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),0))
@@ -3035,7 +3035,7 @@ x = 0
 y = 0
 z = (1000 - L_tube)/2 + L_tube + h1 + h_palier_2_fixation_support + h_rondelle_30m + h_ecrou_30m + h_rondelle_30m + h_palier_2_fixation_ossature + h_rondelle_30m + h_ecrou_30m + h_ecrou_30m/2 + 2
 color = (0.40, 0.40, 0.40)
-assembly_poulie_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/assembly_poulie.stl"
+assembly_poulie_stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/assembly_poulie.stl"
 Mesh.insert(assembly_poulie_stl_file, assembly)
 FreeCADGui.getDocument(assembly).getObject("assembly_poulie001").ShapeColor = color
 FreeCAD.getDocument(assembly).getObject("assembly_poulie001").Placement = App.Placement(App.Vector(x,y,z),App.Rotation(App.Vector(1,0,0),180))
@@ -3073,12 +3073,12 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("assembly_poulie"))
 
 __objs__.append(FreeCAD.getDocument(assembly).getObject("assembly_poulie001"))
 
-Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + assembly + ".stl")
+Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/" + assembly + ".stl")
 
 del __objs__
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\assembly_generator_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\assembly_generator_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -3151,7 +3151,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\assembly_generator.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\assembly_generator.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -3159,7 +3159,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         pywinauto.keyboard.send_keys('{ENTER}')
 
 
-class UnitTestsVersion2Trash(unittest.TestCase):
+class UnitTestsVersion3Trash(unittest.TestCase):
     # ok
     # https://www.visseriefixations.fr/vis-a-tete-hexagonale/vis-a-tete-hexagonale-standard/acier-8-8-noir/th-acier-8-8-noir-filetage-total-din-933/th-m16x200-acier-8-8-noir-ef-din-933.html
     def test_part_vis_metal_m16_200l(self):
@@ -3230,7 +3230,7 @@ DOC.recompute()
 __objs__ = []
 __objs__.append(FreeCAD.getDocument("part_vis_metal_m16_200l").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_vis_metal_m16_200l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_vis_metal_m16_200l.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -3248,7 +3248,7 @@ setview()
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_vis_metal_m16_200l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_vis_metal_m16_200l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -3316,7 +3316,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_rondelle_12m").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_rondelle_12m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_rondelle_12m.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -3334,7 +3334,7 @@ setview()
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_rondelle_12m.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_rondelle_12m.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -3402,7 +3402,7 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_ecrou_12m").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_ecrou_12m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_ecrou_12m.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -3420,7 +3420,7 @@ setview()
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_ecrou_12m.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_ecrou_12m.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -3497,7 +3497,7 @@ DOC.recompute()
 __objs__=[]
 __objs__.append(FreeCAD.getDocument("part_vis_metal_m12_200l").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_vis_metal_m12_200l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_vis_metal_m12_200l.stl"
 
 Mesh.export(__objs__, stl_file)
 
@@ -3515,7 +3515,7 @@ setview()
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_vis_metal_m12_200l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_vis_metal_m12_200l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -3594,14 +3594,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_mamelon_a_visser_12_17_m").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_mamelon_a_visser_12_17_m.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_mamelon_a_visser_12_17_m.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_mamelon_a_visser_12_17_m_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_mamelon_a_visser_12_17_m_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -3674,7 +3674,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_mamelon_a_visser_12_17_m.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_mamelon_a_visser_12_17_m.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -3741,14 +3741,14 @@ __objs__=[]
 
 __objs__.append(FreeCAD.getDocument("part_manchon_a_visser_12_17_f").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_manchon_a_visser_12_17_f.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_manchon_a_visser_12_17_f.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_manchon_a_visser_12_17_f_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_manchon_a_visser_12_17_f_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -3821,7 +3821,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_manchon_a_visser_12_17_f.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_manchon_a_visser_12_17_f.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)
@@ -3884,14 +3884,14 @@ __objs__ = []
 
 __objs__.append(FreeCAD.getDocument("part_tige_filetee_m16_1000l").getObject("Shape"))
 
-stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/part_tige_filetee_m16_1000l.stl"
+stl_file = u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_3/Stl/part_tige_filetee_m16_1000l.stl"
 
 Mesh.export(__objs__, stl_file)
 
 setview()
 
 # Generate PNG files
-file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Png\\\\part_tige_filetee_m16_1000l_'
+file = 'C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Png\\\\part_tige_filetee_m16_1000l_'
 # Ombré
 Gui.runCommand('Std_DrawStyle',5)
 i = 1
@@ -3964,7 +3964,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
         time.sleep(3)
 
         pywinauto.keyboard.send_keys(
-            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_2\\\\Scripts\\\\part_tige_filetee_m16_1000l.py"{)}.read{(}{)}{)}'
+            'exec{(}open{(}"C:\\\\Users\\\\Jason\\\\Documents\\\\Devs\\\\Python-Macros-For-FreeCAD\\\\HG\\\\Version_3\\\\Scripts\\\\part_tige_filetee_m16_1000l.py"{)}.read{(}{)}{)}'
         )
 
         time.sleep(3)

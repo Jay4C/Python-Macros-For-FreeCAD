@@ -225,3 +225,65 @@ __objs__.append(FreeCAD.getDocument(assembly).getObject("assembly_poulie001"))
 Mesh.export(__objs__,u"C:/Users/Jason/Documents/Devs/Python-Macros-For-FreeCAD/HG/Version_2/Stl/" + assembly + ".stl")
 
 del __objs__
+
+# Generate PNG files
+file = 'C:\\Users\\Jason\\Documents\\Devs\\Python-Macros-For-FreeCAD\\HG\\Version_2\\Png\\assembly_generator_'
+# Ombré
+Gui.runCommand('Std_DrawStyle',5)
+i = 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+# Filaire
+Gui.runCommand('Std_DrawStyle',2)
+i += 1
+Gui.activeDocument().activeView().viewIsometric()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewFront()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewTop()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRight()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewRear()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewBottom()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
+
+i += 1
+Gui.activeDocument().activeView().viewLeft()
+Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Current')
