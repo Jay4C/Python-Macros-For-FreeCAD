@@ -8,8 +8,8 @@ import time
 # Homopolar generator
 # https://patentimages.storage.googleapis.com/0c/c9/14/0e4d740f16793e/WO1995008210A1.pdf
 class UnitsTestsHGVersion3Parts(unittest.TestCase):
-    # ok
-    # https://www.visseriefixations.fr/tiges-filetees/acier-classe-4-6/tige-filetee-acier-4-6-brut-din-975/tige-filetee-m30-acier-4-6-brut-din-975.html
+    #
+    #
     def test_part_tige_filetee_m30_1000l(self):
         print("test_part_tige_filetee_m30_1000l")
 
@@ -151,8 +151,8 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
-    # https://www.visseriefixations.fr/ecrous/ecrous-hexagonaux/ecrou-hexagonal-hu/ecrou-hu-acier-brut-din-934/ecrou-hu-acier-brut-classe-8-din-934/ecrou-hu-m30-brut-din-934.html
+    #
+    #
     def test_part_ecrou_30m(self):
         print("test_part_ecrou_30m")
 
@@ -299,8 +299,8 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
-    # https://www.visseriefixations.fr/rondelles-circlips/rondelles-plates/sans-chanfrein/serie-etroite-z/acier/rondelle-z-acier-zingue-blanc-nfe-25513/rondelle-z-0-30-z-blanc-nfe-25513.html
+    #
+    #
     def test_part_rondelle_30m(self):
         print("test_part_rondelle_30m")
 
@@ -447,7 +447,7 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
+    #
     # https://www.laserboost.com/
     def test_part_faraday_disc(self):
         print("test_part_faraday_disc")
@@ -1108,8 +1108,8 @@ Gui.activeDocument().activeView().saveImage(file + str(i) + '.png',1117,388,'Cur
 
         pywinauto.keyboard.send_keys('{ENTER}')
 
-    # ok
-    # https://www.commentfer.fr/tube-inox-rond/778-1553-tube-inox-304l-diametre-889-mm-3701102707831.html#/25-longueur_en_metre-1_metre/45-epaisseur-2_mm/648-section-889_mm
+    #
+    #
     def test_part_tube(self):
         print("test_part_tube")
 
